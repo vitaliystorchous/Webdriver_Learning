@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cc52cb3-a665-4c10-8e77-8c7ed6d68616" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/LoginTestInFirefoxNightly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/MyFirstTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/MyFirstTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ru.stqa.training.selenium.MyFirstTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ru.stqa.training.selenium.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/ru.stqa.training.selenium.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ru.stqa.training.selenium.MyFirstTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/MyFirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/MyFirstTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +45,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.stqa.training.selenium" />
+    </key>
   </component>
   <component name="RunManager" selected="Gradle.LoginTest">
     <configuration name="Sandbox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -144,25 +132,25 @@
       <screen x="-1680" y="38" width="1680" height="1010" />
     </state>
     <state x="-1060" y="302" key="FileChooserDialogImpl/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591681256081" />
-    <state width="1877" height="302" key="GridCell.Tab.0.bottom" timestamp="1591769855477">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1637" height="302" key="GridCell.Tab.0.bottom" timestamp="1591770231340">
+      <screen x="-1680" y="38" width="1680" height="1010" />
     </state>
-    <state width="1637" height="302" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591767938568" />
+    <state width="1637" height="302" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591770231340" />
     <state width="1877" height="302" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591769855477" />
-    <state width="1877" height="302" key="GridCell.Tab.0.center" timestamp="1591769855476">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1637" height="302" key="GridCell.Tab.0.center" timestamp="1591770231340">
+      <screen x="-1680" y="38" width="1680" height="1010" />
     </state>
-    <state width="1637" height="302" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591767938568" />
+    <state width="1637" height="302" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591770231340" />
     <state width="1877" height="302" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591769855476" />
-    <state width="1877" height="302" key="GridCell.Tab.0.left" timestamp="1591769855476">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1637" height="302" key="GridCell.Tab.0.left" timestamp="1591770231340">
+      <screen x="-1680" y="38" width="1680" height="1010" />
     </state>
-    <state width="1637" height="302" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591767938568" />
+    <state width="1637" height="302" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591770231340" />
     <state width="1877" height="302" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591769855476" />
-    <state width="1877" height="302" key="GridCell.Tab.0.right" timestamp="1591769855477">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1637" height="302" key="GridCell.Tab.0.right" timestamp="1591770231340">
+      <screen x="-1680" y="38" width="1680" height="1010" />
     </state>
-    <state width="1637" height="302" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591767938568" />
+    <state width="1637" height="302" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591770231340" />
     <state width="1877" height="302" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591769855477" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1591627682731">
       <screen x="-1680" y="38" width="1680" height="1010" />
@@ -184,10 +172,10 @@
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591627682731" />
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591625656013" />
-    <state x="626" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1591762262973">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1132" y="372" key="com.intellij.ide.util.TipDialog" timestamp="1591853920211">
+      <screen x="-1680" y="38" width="1680" height="1010" />
     </state>
-    <state x="-1132" y="372" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591675202289" />
+    <state x="-1132" y="372" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591853920211" />
     <state x="626" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591762262973" />
   </component>
 </project>
