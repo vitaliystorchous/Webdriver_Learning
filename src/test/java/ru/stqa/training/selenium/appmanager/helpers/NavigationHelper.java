@@ -3,6 +3,7 @@ package ru.stqa.training.selenium.appmanager.helpers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import java.util.Properties;
 
@@ -24,66 +25,285 @@ public class NavigationHelper extends HelperBase {
         }
     }
 
+    public WebElement navigationMenu() {
+        return wd.findElement(By.cssSelector("#box-apps-menu"));
+    }
+
     public void appearenceTab() {
-        click(By.cssSelector("#box-apps-menu [href='http://localhost/litecart/admin/?app=appearance&doc=template']"));
+        navigationMenu().findElement(By.cssSelector("#app- > [href*=appearance]")).click();
     }
 
     public void templatePage() {
         appearenceTab();
-        click(By.cssSelector("#box-apps-menu #doc-template"));
+        navigationMenu().findElement(By.cssSelector("#doc-template")).click();
     }
 
     public void logotypePage() {
         appearenceTab();
-        click(By.cssSelector("#box-apps-menu #doc-logotype"));
+        navigationMenu().findElement(By.cssSelector("#doc-logotype")).click();
     }
 
     public void catalogTab() {
-        click(By.cssSelector("#box-apps-menu #app- > [href=\"http://localhost/litecart/admin/?app=catalog&doc=catalog\"]"));
+        navigationMenu().findElement(By.cssSelector("#app- > [href*=catalog]")).click();
     }
 
     public void catalogPage() {
         catalogTab();
-        click(By.cssSelector("#box-apps-menu #doc-catalog"));
+        navigationMenu().findElement(By.cssSelector("#doc-catalog")).click();
     }
 
     public void productGroupsPage() {
         catalogTab();
-        click(By.cssSelector("#box-apps-menu #doc-product_groups"));
+        navigationMenu().findElement(By.cssSelector("#doc-product_groups")).click();
     }
 
     public void optionGroupsPage() {
         catalogTab();
-        click(By.cssSelector("#box-apps-menu #doc-option_groups"));
+        navigationMenu().findElement(By.cssSelector("#doc-option_groups")).click();
     }
 
     public void manufacturersPage() {
         catalogPage();
-        click(By.cssSelector("#box-apps-menu #doc-manufacturers"));
+        navigationMenu().findElement(By.cssSelector("#doc-manufacturers")).click();
     }
 
     public void suppliersPage() {
         catalogPage();
-        click(By.cssSelector("#box-apps-menu #doc-suppliers"));
+        navigationMenu().findElement(By.cssSelector("#doc-suppliers")).click();
     }
 
     public void deliveryStatusesPage() {
         catalogPage();
-        click(By.cssSelector("#box-apps-menu #doc-delivery_statuses"));
+        navigationMenu().findElement(By.cssSelector("#doc-delivery_statuses")).click();
     }
 
     public void soldOutStatusesPage() {
         catalogPage();
-        click(By.cssSelector("#box-apps-menu #doc-sold_out_statuses"));
+        navigationMenu().findElement(By.cssSelector("#doc-sold_out_statuses")).click();
     }
 
     public void quantityUnitsPage() {
         catalogPage();
-        click(By.cssSelector("#box-apps-menu #doc-quantity_units"));
+        navigationMenu().findElement(By.cssSelector("#doc-quantity_units")).click();
     }
 
-    public void csvImportExportPage() {
+    public void catalogCsvImportExportPage() {
         catalogPage();
-        click(By.cssSelector("#box-apps-menu #doc-csv"));
+        navigationMenu().findElement(By.cssSelector("#doc-csv")).click();
+    }
+
+    public void countriesTab() {
+        navigationMenu().findElement(By.cssSelector("#app- > [href*=countries]")).click();
+    }
+
+    public void currenciesTab() {
+        navigationMenu().findElement(By.cssSelector("#app- > [href*=currencies]")).click();
+    }
+
+    public void customersTab() {
+        navigationMenu().findElement(By.cssSelector("#app- > [href*=customers]")).click();
+    }
+
+    public void customersPage() {
+        customersTab();
+        navigationMenu().findElement(By.cssSelector("#doc-customers")).click();
+    }
+
+    public void customersCsvImportExportPage() {
+        customersTab();
+        navigationMenu().findElement(By.cssSelector("#doc-csv")).click();
+    }
+
+    public void newsletterPage() {
+        customersTab();
+        navigationMenu().findElement(By.cssSelector("#doc-newsletter")).click();
+    }
+
+    public void geoZonesTab() {
+        navigationMenu().findElement(By.cssSelector("#app- > [href*=geo_zones]")).click();
+    }
+
+    public void languagesTab() {
+        navigationMenu().findElement(By.cssSelector("#app- > [href*=languages]")).click();
+    }
+
+    public void languagesPage() {
+        languagesTab();
+        navigationMenu().findElement(By.cssSelector("#doc-languages")).click();
+    }
+
+    public void storageEncodingPage() {
+        languagesTab();
+        navigationMenu().findElement(By.cssSelector("#doc-storage_encoding")).click();
+    }
+
+    public void modulesTab() {
+        navigationMenu().findElement(By.cssSelector("#app- > [href*=jobs]")).click();
+    }
+
+    public void jobModulesPage() {
+        modulesTab();
+        navigationMenu().findElement(By.cssSelector("#doc-jobs")).click();
+    }
+
+    public void customerModulesPage() {
+        modulesTab();
+        navigationMenu().findElement(By.cssSelector("#doc-customer")).click();
+    }
+
+    public void shippingModulesPage() {
+        modulesTab();
+        navigationMenu().findElement(By.cssSelector("#doc-shipping")).click();
+    }
+
+    public void paymentModulesPage() {
+        modulesTab();
+        navigationMenu().findElement(By.cssSelector("#doc-payment")).click();
+    }
+
+    public void orderTotalModules() {
+        modulesTab();
+        navigationMenu().findElement(By.cssSelector("#doc-order_total")).click();
+    }
+
+    public void orderSuccessModulesPage() {
+        modulesTab();
+        navigationMenu().findElement(By.cssSelector("#doc-order_success")).click();
+    }
+
+    public void orderActionModulesPage() {
+        modulesTab();
+        navigationMenu().findElement(By.cssSelector("#doc-order_action")).click();
+    }
+
+    public void ordersTab() {
+        navigationMenu().findElement(By.cssSelector("#app- > [href*=orders]")).click();
+    }
+
+    public void ordersPage() {
+        ordersTab();
+        navigationMenu().findElement(By.cssSelector("#doc-orders")).click();
+    }
+
+    public void orderStatusesPage() {
+        ordersTab();
+        navigationMenu().findElement(By.cssSelector("#doc-order_statuses")).click();
+    }
+
+    public void pagesTab() {
+        navigationMenu().findElement(By.cssSelector("#app- > [href*=pages]")).click();
+    }
+
+    public void reportsTab() {
+        navigationMenu().findElement(By.cssSelector("#app- > [href*=reports]")).click();
+    }
+
+    public void monthlySalesPage() {
+        reportsTab();
+        navigationMenu().findElement(By.cssSelector("#doc-monthly_sales")).click();
+    }
+
+    public void mostSoldProductsPage() {
+        reportsTab();
+        navigationMenu().findElement(By.cssSelector("#doc-most_sold_products")).click();
+    }
+
+    public void mostShoppingCustomersPage() {
+        reportsTab();
+        navigationMenu().findElement(By.cssSelector("#doc-most_shopping_customers")).click();
+    }
+
+    public void settingsTab() {
+        navigationMenu().findElement(By.cssSelector("#app- > [href*=settings]")).click();
+    }
+
+    public void storeInfoSettingsPage() {
+        settingsTab();
+        navigationMenu().findElement(By.cssSelector("#doc-store_info")).click();
+    }
+
+    public void defaultsSettingsPage() {
+        settingsTab();
+        navigationMenu().findElement(By.cssSelector("#doc-defaults")).click();
+    }
+
+    public void generalSettingsPage() {
+        settingsTab();
+        navigationMenu().findElement(By.cssSelector("#doc-general")).click();
+    }
+
+    public void listingSettingsPage() {
+        settingsTab();
+        navigationMenu().findElement(By.cssSelector("#doc-listings")).click();
+    }
+
+    public void imagesSettingsPage() {
+        settingsTab();
+        navigationMenu().findElement(By.cssSelector("#doc-images")).click();
+    }
+
+    public void checkoutSettingsPage() {
+        settingsTab();
+        navigationMenu().findElement(By.cssSelector("#doc-checkout")).click();
+    }
+
+    public void advancedSettingsPage() {
+        settingsTab();
+        navigationMenu().findElement(By.cssSelector("#doc-advanced")).click();
+    }
+
+    public void securitySettingsPage() {
+        settingsTab();
+        navigationMenu().findElement(By.cssSelector("#doc-security")).click();
+    }
+
+    public void slidesTab() {
+        navigationMenu().findElement(By.cssSelector("#app- > [href*=slides]")).click();
+    }
+
+    public void taxTab() {
+        navigationMenu().findElement(By.cssSelector("#app- > [href*=tax]")).click();
+    }
+
+    public void taxClassesPage() {
+        taxTab();
+        navigationMenu().findElement(By.cssSelector("#doc-tax_classes")).click();
+    }
+
+    public void taxRatesPage() {
+        taxTab();
+        navigationMenu().findElement(By.cssSelector("#doc-tax_rates")).click();
+    }
+
+    public void translationsTab() {
+        navigationMenu().findElement(By.cssSelector("#app- > [href*=translations]")).click();
+    }
+
+    public void searchTranslationsPage() {
+        translationsTab();
+        navigationMenu().findElement(By.cssSelector("#doc-search")).click();
+    }
+
+    public void scanFilesForTranslationPage() {
+        translationsTab();
+        navigationMenu().findElement(By.cssSelector("#doc-scan")).click();
+    }
+
+    public void translationsCsvImportExportPage() {
+        translationsTab();
+        navigationMenu().findElement(By.cssSelector("#doc-csv")).click();
+    }
+
+    public void usersTab() {
+        navigationMenu().findElement(By.cssSelector("#app- > [href*=users]")).click();
+    }
+
+    public void vQmodsTab() {
+        navigationMenu().findElement(By.cssSelector("#app- > [href*=vqmods]")).click();
+    }
+
+    public void vQmodsPage() {
+        vQmodsTab();
+        navigationMenu().findElement(By.cssSelector("#doc-vqmods")).click();
     }
 }

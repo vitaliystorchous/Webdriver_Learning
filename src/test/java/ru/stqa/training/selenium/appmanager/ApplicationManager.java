@@ -38,7 +38,44 @@ public class ApplicationManager {
     private DeliveryStatusesPageHelper deliveryStatusesPageHelper;
     private SoldOutStatusesPageHelper soldOutStatusesPageHelper;
     private QuantityUnitsPageHelper quantityUnitsPageHelper;
-    private CSVImportExportPageHelper csvImportExportPageHelper;
+    private CatalogCsvImportExportPageHelper catalogCsvImportExportPageHelper;
+    private CountriesPageHelper countriesPageHelper;
+    private CurrenciesPageHelper currenciesPageHelper;
+    private CustomersPageHelper customersPageHelper;
+    private CustomersCsvImportExportPageHelper customersCsvImportExportPageHelper;
+    private NewsletterPageHelper newsletterPageHelper;
+    private GeoZonesPageHelper geoZonesPageHelper;
+    private LanguagesPageHelper languagesPageHelper;
+    private StorageEncodingPageHelper storageEncodingPageHelper;
+    private JobModulesPageHelper jobModulesPageHelper;
+    private CustomerModulesPageHelper customerModulesPageHelper;
+    private ShippingModulesPageHelper shippingModulesPageHelper;
+    private PaymentModulesPageHelper paymentModulesPageHelper;
+    private OrderTotalModulesPageHelper orderTotalModulesPageHelper;
+    private OrderSuccessModulesPageHelper orderSuccessModulesPageHelper;
+    private OrderActionModulesPageHelper orderActionModulesPageHelper;
+    private OrdersPageHelper ordersPageHelper;
+    private OrderStatusesPageHelper orderStatusesPageHelper;
+    private PagesPageHelper pagesPageHelper;
+    private MonthlySalesPageHelper monthlySalesPageHelper;
+    private MostSoldProductsPageHelper mostSoldProductsPageHelper;
+    private MostShoppingCustomersPageHelper mostShoppingCustomersPageHelper;
+    private SettingsPageHelper settingsPageHelper;
+    private DefaultsSettingsPageHelper defaultsSettingsPageHelper;
+    private GeneralSettingsPageHelper generalSettingsPageHelper;
+    private ListingSettingsPageHelper listingSettingsPageHelper;
+    private ImagesSettingsPageHelper imagesSettingsPageHelper;
+    private CheckoutSettingsPageHelper checkoutSettingsPageHelper;
+    private AdvancedSettingsPageHelper advancedSettingsPageHelper;
+    private SecuritySettingsPageHelper securitySettingsPageHelper;
+    private SlidesPageHelper slidesPageHelper;
+    private TaxClassesPageHelper taxClassesPageHelper;
+    private TaxRatesPageHelper taxRatesPageHelper;
+    private SearchTranslationsPageHelper searchTranslationsPageHelper;
+    private ScanFilesForTranslationsPage scanFilesForTranslationsPage;
+    private TranslationsCSVImportExportPageHelper translationsCSVImportExportPageHelper;
+    private UsersPageHelper usersPageHelper;
+    private VQmodsPageHelper vQmodsPageHelper;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -112,7 +149,44 @@ public class ApplicationManager {
         deliveryStatusesPageHelper = new DeliveryStatusesPageHelper(wd);
         soldOutStatusesPageHelper = new SoldOutStatusesPageHelper(wd);
         quantityUnitsPageHelper = new QuantityUnitsPageHelper(wd);
-        csvImportExportPageHelper = new CSVImportExportPageHelper(wd);
+        catalogCsvImportExportPageHelper = new CatalogCsvImportExportPageHelper(wd);
+        countriesPageHelper = new CountriesPageHelper(wd);
+        currenciesPageHelper = new CurrenciesPageHelper(wd);
+        customersPageHelper = new CustomersPageHelper(wd);
+        customersCsvImportExportPageHelper = new CustomersCsvImportExportPageHelper(wd);
+        newsletterPageHelper = new NewsletterPageHelper(wd);
+        geoZonesPageHelper = new GeoZonesPageHelper(wd);
+        languagesPageHelper = new LanguagesPageHelper(wd);
+        storageEncodingPageHelper = new StorageEncodingPageHelper(wd);
+        jobModulesPageHelper = new JobModulesPageHelper(wd);
+        customerModulesPageHelper = new CustomerModulesPageHelper(wd);
+        shippingModulesPageHelper = new ShippingModulesPageHelper(wd);
+        paymentModulesPageHelper = new PaymentModulesPageHelper(wd);
+        orderTotalModulesPageHelper = new OrderTotalModulesPageHelper(wd);
+        orderSuccessModulesPageHelper = new OrderSuccessModulesPageHelper(wd);
+        orderActionModulesPageHelper = new OrderActionModulesPageHelper(wd);
+        ordersPageHelper = new OrdersPageHelper(wd);
+        orderStatusesPageHelper = new OrderStatusesPageHelper(wd);
+        pagesPageHelper = new PagesPageHelper(wd);
+        monthlySalesPageHelper = new MonthlySalesPageHelper(wd);
+        mostSoldProductsPageHelper = new MostSoldProductsPageHelper(wd);
+        mostShoppingCustomersPageHelper = new MostShoppingCustomersPageHelper(wd);
+        settingsPageHelper = new SettingsPageHelper(wd);
+        defaultsSettingsPageHelper = new DefaultsSettingsPageHelper(wd);
+        generalSettingsPageHelper = new GeneralSettingsPageHelper(wd);
+        listingSettingsPageHelper = new ListingSettingsPageHelper(wd);
+        imagesSettingsPageHelper = new ImagesSettingsPageHelper(wd);
+        checkoutSettingsPageHelper = new CheckoutSettingsPageHelper(wd);
+        advancedSettingsPageHelper = new AdvancedSettingsPageHelper(wd);
+        securitySettingsPageHelper = new SecuritySettingsPageHelper(wd);
+        slidesPageHelper = new SlidesPageHelper(wd);
+        taxClassesPageHelper = new TaxClassesPageHelper(wd);
+        taxRatesPageHelper = new TaxRatesPageHelper(wd);
+        searchTranslationsPageHelper = new SearchTranslationsPageHelper(wd);
+        scanFilesForTranslationsPage = new ScanFilesForTranslationsPage(wd);
+        translationsCSVImportExportPageHelper = new TranslationsCSVImportExportPageHelper(wd);
+        usersPageHelper = new UsersPageHelper(wd);
+        vQmodsPageHelper = new VQmodsPageHelper(wd);
     }
 
     public void stop() {
@@ -184,7 +258,155 @@ public class ApplicationManager {
         return quantityUnitsPageHelper;
     }
 
-    public CSVImportExportPageHelper csvImportExportPage() {
-        return csvImportExportPageHelper;
+    public CatalogCsvImportExportPageHelper catalogCsvImportExportPage() {
+        return catalogCsvImportExportPageHelper;
+    }
+
+    public CountriesPageHelper countriesPage() {
+        return countriesPageHelper;
+    }
+
+    public CurrenciesPageHelper currenciesPage() {
+        return currenciesPageHelper;
+    }
+
+    public CustomersPageHelper customersPage() {
+        return customersPageHelper;
+    }
+
+    public CustomersCsvImportExportPageHelper customersCsvImportExportPage() {
+        return customersCsvImportExportPageHelper;
+    }
+
+    public NewsletterPageHelper newsletterPage() {
+        return newsletterPageHelper;
+    }
+
+    public GeoZonesPageHelper geoZonesPage() {
+        return geoZonesPageHelper;
+    }
+
+    public LanguagesPageHelper languagesPage() {
+        return languagesPageHelper;
+    }
+
+    public StorageEncodingPageHelper storageEncodingPage() {
+        return storageEncodingPageHelper;
+    }
+
+    public JobModulesPageHelper jobModulesPage() {
+        return jobModulesPageHelper;
+    }
+
+    public CustomerModulesPageHelper customerModulesPage() {
+        return customerModulesPageHelper;
+    }
+
+    public ShippingModulesPageHelper shippingModulesPage() {
+        return shippingModulesPageHelper;
+    }
+
+    public PaymentModulesPageHelper paymentModulesPage() {
+        return paymentModulesPageHelper;
+    }
+
+    public OrderTotalModulesPageHelper orderTotalModulesPage() {
+        return orderTotalModulesPageHelper;
+    }
+
+    public OrderSuccessModulesPageHelper orderSuccessModulesPage() {
+        return orderSuccessModulesPageHelper;
+    }
+
+    public OrderActionModulesPageHelper orderActionModulesPage() {
+        return orderActionModulesPageHelper;
+    }
+
+    public OrdersPageHelper ordersPage() {
+        return ordersPageHelper;
+    }
+
+    public OrderStatusesPageHelper orderStatusesPage() {
+        return orderStatusesPageHelper;
+    }
+
+    public PagesPageHelper pagesPage() {
+        return pagesPageHelper;
+    }
+
+    public MonthlySalesPageHelper monthlySalesPage() {
+        return monthlySalesPageHelper;
+    }
+
+    public MostSoldProductsPageHelper mostSoldProductsPage() {
+        return mostSoldProductsPageHelper;
+    }
+
+    public MostShoppingCustomersPageHelper mostShoppingCustomersPage() {
+        return mostShoppingCustomersPageHelper;
+    }
+
+    public SettingsPageHelper settingsPage() {
+        return settingsPageHelper;
+    }
+
+    public DefaultsSettingsPageHelper defaultsSettingsPage() {
+        return defaultsSettingsPageHelper;
+    }
+
+    public GeneralSettingsPageHelper generalSettingsPage() {
+        return generalSettingsPageHelper;
+    }
+
+    public ListingSettingsPageHelper listingSettingsPage() {
+        return listingSettingsPageHelper;
+    }
+
+    public ImagesSettingsPageHelper imagesSettingsPage() {
+        return imagesSettingsPageHelper;
+    }
+
+    public CheckoutSettingsPageHelper checkoutSettingsPage() {
+        return checkoutSettingsPageHelper;
+    }
+
+    public AdvancedSettingsPageHelper advancedSettingsPage() {
+        return advancedSettingsPageHelper;
+    }
+
+    public SecuritySettingsPageHelper securitySettingsPage() {
+        return securitySettingsPageHelper;
+    }
+
+    public SlidesPageHelper slidesPage() {
+        return slidesPageHelper;
+    }
+
+    public TaxClassesPageHelper taxClassesPage() {
+        return taxClassesPageHelper;
+    }
+
+    public TaxRatesPageHelper taxRatesPage() {
+        return taxRatesPageHelper;
+    }
+
+    public SearchTranslationsPageHelper searchTranslationsPage() {
+        return searchTranslationsPageHelper;
+    }
+
+    public ScanFilesForTranslationsPage scanFilesForTranslationsPage() {
+        return scanFilesForTranslationsPage;
+    }
+
+    public TranslationsCSVImportExportPageHelper translationsCsvImportExportPage() {
+        return translationsCSVImportExportPageHelper;
+    }
+
+    public UsersPageHelper usersPage() {
+        return usersPageHelper;
+    }
+
+    public VQmodsPageHelper vQmodsPage() {
+        return vQmodsPageHelper;
     }
 }
