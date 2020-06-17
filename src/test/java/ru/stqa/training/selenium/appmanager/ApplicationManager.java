@@ -10,7 +10,7 @@ import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import ru.stqa.training.selenium.appmanager.helpers.*;
+import ru.stqa.training.selenium.appmanager.helpers.adminpanel.*;
 
 import java.io.File;
 import java.io.FileReader;
