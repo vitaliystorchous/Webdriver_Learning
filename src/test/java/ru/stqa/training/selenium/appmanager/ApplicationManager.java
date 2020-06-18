@@ -11,6 +11,7 @@ import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import ru.stqa.training.selenium.appmanager.helpers.adminpanel.*;
+import ru.stqa.training.selenium.appmanager.helpers.usersite.HomepageHelper;
 
 import java.io.File;
 import java.io.FileReader;
@@ -76,6 +77,7 @@ public class ApplicationManager {
     private TranslationsCSVImportExportPageHelper translationsCSVImportExportPageHelper;
     private UsersPageHelper usersPageHelper;
     private VQmodsPageHelper vQmodsPageHelper;
+    private HomepageHelper homepageHelper;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -187,6 +189,7 @@ public class ApplicationManager {
         translationsCSVImportExportPageHelper = new TranslationsCSVImportExportPageHelper(wd);
         usersPageHelper = new UsersPageHelper(wd);
         vQmodsPageHelper = new VQmodsPageHelper(wd);
+        homepageHelper = new HomepageHelper(wd);
     }
 
     public void stop() {
@@ -408,5 +411,9 @@ public class ApplicationManager {
 
     public VQmodsPageHelper vQmodsPage() {
         return vQmodsPageHelper;
+    }
+
+    public HomepageHelper homepage() {
+        return homepageHelper;
     }
 }
