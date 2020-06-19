@@ -78,6 +78,7 @@ public class ApplicationManager {
     private UsersPageHelper usersPageHelper;
     private VQmodsPageHelper vQmodsPageHelper;
     private HomepageHelper homepageHelper;
+    private EditCountyPageHelper editCountyPageHelper;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -190,6 +191,7 @@ public class ApplicationManager {
         usersPageHelper = new UsersPageHelper(wd);
         vQmodsPageHelper = new VQmodsPageHelper(wd);
         homepageHelper = new HomepageHelper(wd);
+        editCountyPageHelper = new EditCountyPageHelper(wd);
     }
 
     public void stop() {
@@ -415,5 +417,9 @@ public class ApplicationManager {
 
     public HomepageHelper homepage() {
         return homepageHelper;
+    }
+
+    public EditCountyPageHelper editCountryPage() {
+        return editCountyPageHelper;
     }
 }

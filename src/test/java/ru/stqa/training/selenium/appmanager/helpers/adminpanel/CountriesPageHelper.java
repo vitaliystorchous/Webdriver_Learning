@@ -32,4 +32,8 @@ public class CountriesPageHelper extends HelperBase {
 
         return countriesJava;
     }
+
+    public void openCountry(String name) {
+        wd.findElement(By.linkText(name)).click();
+    }
 }
