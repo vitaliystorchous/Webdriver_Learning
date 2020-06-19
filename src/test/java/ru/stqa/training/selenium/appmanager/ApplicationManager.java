@@ -79,6 +79,7 @@ public class ApplicationManager {
     private VQmodsPageHelper vQmodsPageHelper;
     private HomepageHelper homepageHelper;
     private EditCountyPageHelper editCountyPageHelper;
+    private EditGeoZonePageHelper editGeoZonePageHelper;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -192,6 +193,7 @@ public class ApplicationManager {
         vQmodsPageHelper = new VQmodsPageHelper(wd);
         homepageHelper = new HomepageHelper(wd);
         editCountyPageHelper = new EditCountyPageHelper(wd);
+        editGeoZonePageHelper = new EditGeoZonePageHelper(wd);
     }
 
     public void stop() {
@@ -421,5 +423,9 @@ public class ApplicationManager {
 
     public EditCountyPageHelper editCountryPage() {
         return editCountyPageHelper;
+    }
+
+    public EditGeoZonePageHelper editGeoZonePage() {
+        return editGeoZonePageHelper;
     }
 }

@@ -12,7 +12,7 @@ import static java.util.Comparator.comparing;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class CountriesSortingTest extends TestBase {
+public class SortingTest extends TestBase {
 
     @Test
     public void testCountriesAreSortedAlphabetically() {
@@ -20,12 +20,12 @@ public class CountriesSortingTest extends TestBase {
         app.goTo().countriesTab();
         List<Country> countriesOriginal = app.countriesPage().allCountries();
         List<Country> countriesSorted = new ArrayList<>(countriesOriginal);
-        countriesSorted.sort(comparing(Country::getName));
+        countriesSorted.sort(comparing(Country::getName, String::compareToIgnoreCase));
         assertThat(countriesOriginal, equalTo(countriesSorted));
     }
 
     @Test
-    public void testZonesOfCountriesAreSortedAlphabetically() {
+    public void testZonesOfCountriesAreSortedAlphabeticallyOnEditCountryPage() {
         app.goTo().adminPanel();
         app.goTo().countriesTab();
         List<Country> countries = app.countriesPage().allCountries();
@@ -36,9 +36,25 @@ public class CountriesSortingTest extends TestBase {
                 app.countriesPage().openCountry(country.getName());
                 List<Zone> zones = app.editCountryPage().allZones();
                 List<Zone> zonesSorted = new ArrayList<>(zones);
-                zonesSorted.sort(comparing(Zone::getName));
+                zonesSorted.sort(comparing(Zone::getName, String::compareToIgnoreCase));
                 assertThat(zones, equalTo(zonesSorted));
             }
+        }
+    }
+
+    @Test
+    public void testZonesOfCountriesAreSortedAlphabeticallyOnEditGeoZonePage() {
+        app.goTo().adminPanel();
+        app.goTo().geoZonesTab();
+        List<Country> countries = app.geoZonesPage().allCountries();
+
+        for (Country country : countries) {
+            app.goTo().geoZonesTab();
+            app.geoZonesPage().openCountry(country.getName());
+            List<Zone> zones = app.editGeoZonePage().allZones();
+            List<Zone> zonesSorted= new ArrayList<>(zones);
+            zonesSorted.sort(comparing(Zone::getName, String::compareToIgnoreCase));
+            assertThat(zones, equalTo(zonesSorted));
         }
     }
 }
