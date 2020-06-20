@@ -2,8 +2,15 @@ package ru.stqa.training.selenium.models;
 
 public class Country {
 
+    public enum Status{
+        ENABLED,
+        DISABLED
+    }
+
     String name;
     int zonesAmount;
+    Status status;
+
 
     public String getName() {
         return name;
@@ -23,6 +30,15 @@ public class Country {
         return this;
     }
 
+    public Status getStatus() {
+        return status;
+    }
+
+    public Country withStatus(Status status) {
+        this.status = status;
+        return this;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -31,13 +47,15 @@ public class Country {
         Country country = (Country) o;
 
         if (zonesAmount != country.zonesAmount) return false;
-        return name != null ? name.equals(country.name) : country.name == null;
+        if (name != null ? !name.equals(country.name) : country.name != null) return false;
+        return status == country.status;
     }
 
     @Override
     public int hashCode() {
         int result = name != null ? name.hashCode() : 0;
         result = 31 * result + zonesAmount;
+        result = 31 * result + (status != null ? status.hashCode() : 0);
         return result;
     }
 
@@ -46,6 +64,7 @@ public class Country {
         return "Country{" +
                 "name='" + name + '\'' +
                 ", zonesAmount=" + zonesAmount +
+                ", status=" + status +
                 '}';
     }
 }
