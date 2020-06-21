@@ -9,6 +9,8 @@ public class Product {
 
     String name;
     Sticker sticker;
+    Double regularPrice;
+    Double campaignPrice;
 
 
     public String getName() {
@@ -29,6 +31,24 @@ public class Product {
         return this;
     }
 
+    public Double getRegularPrice() {
+        return regularPrice;
+    }
+
+    public Product withRegularPrice(Double regularPrice) {
+        this.regularPrice = regularPrice;
+        return this;
+    }
+
+    public Double getCampaignPrice() {
+        return campaignPrice;
+    }
+
+    public Product withCampaignPrice(Double campaignPrice) {
+        this.campaignPrice = campaignPrice;
+        return this;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -36,14 +56,19 @@ public class Product {
 
         Product product = (Product) o;
 
+        if (name != null ? !name.equals(product.name) : product.name != null) return false;
         if (sticker != product.sticker) return false;
-        return name != null ? name.equals(product.name) : product.name == null;
+        if (regularPrice != null ? !regularPrice.equals(product.regularPrice) : product.regularPrice != null)
+            return false;
+        return campaignPrice != null ? campaignPrice.equals(product.campaignPrice) : product.campaignPrice == null;
     }
 
     @Override
     public int hashCode() {
-        int result = sticker != null ? sticker.hashCode() : 0;
-        result = 31 * result + (name != null ? name.hashCode() : 0);
+        int result = name != null ? name.hashCode() : 0;
+        result = 31 * result + (sticker != null ? sticker.hashCode() : 0);
+        result = 31 * result + (regularPrice != null ? regularPrice.hashCode() : 0);
+        result = 31 * result + (campaignPrice != null ? campaignPrice.hashCode() : 0);
         return result;
     }
 
@@ -52,6 +77,8 @@ public class Product {
         return "Product{" +
                 "name='" + name + '\'' +
                 ", sticker=" + sticker +
+                ", regularPrice=" + regularPrice +
+                ", campaignPrice=" + campaignPrice +
                 '}';
     }
 }

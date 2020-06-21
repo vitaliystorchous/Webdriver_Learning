@@ -8,6 +8,9 @@ import ru.stqa.training.selenium.models.Product;
 import ru.stqa.training.selenium.models.Product.Sticker;
 
 import java.util.*;
+import java.util.concurrent.ThreadLocalRandom;
+
+import static java.lang.Double.parseDouble;
 
 public class HomepageHelper extends HelperBase {
     public HomepageHelper(WebDriver wd) {
@@ -24,12 +27,12 @@ public class HomepageHelper extends HelperBase {
         return products;
     }
 
-    private List<Product> latestProducts() {
+    public List<Product> latestProducts() {
         List<WebElement> products = wd.findElements(By.cssSelector("#box-latest-products .product"));
         return new ArrayList<>(getProducts(products));
     }
 
-    private List<Product> campaignsProducts() {
+    public List<Product> campaignsProducts() {
         List<WebElement> products = wd.findElements(By.cssSelector("#box-campaigns .product"));
         return new ArrayList<>(getProducts(products));
     }
@@ -60,5 +63,26 @@ public class HomepageHelper extends HelperBase {
         }
 
         return productsJava;
+    }
+
+    public Product openRandomProductInCampaignsSection() {
+        List<WebElement> products = wd.findElements(By.cssSelector("#box-campaigns .product"));
+        int randomProduct = ThreadLocalRandom.current().nextInt(0, products.size());
+        String name = products.get(randomProduct)
+                .findElement(By.cssSelector(".name")).getText();
+        Double regularPrice = parseDouble(products.get(randomProduct)
+                .findElement(By.cssSelector(".regular-price"))
+                .getText()
+                .substring(1));
+        Double campaignPrice = parseDouble(products.get(randomProduct)
+                .findElement(By.cssSelector(".campaign-price"))
+                .getText()
+                .substring(1));
+        products.get(randomProduct).click();
+
+        return new Product()
+                .withName(name)
+                .withRegularPrice(regularPrice)
+                .withCampaignPrice(campaignPrice);
     }
 }
