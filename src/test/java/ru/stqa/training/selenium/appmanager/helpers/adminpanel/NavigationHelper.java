@@ -307,4 +307,8 @@ public class NavigationHelper extends HelperBase {
         vQmodsTab();
         navigationMenu().findElement(By.cssSelector("#doc-vqmods")).click();
     }
+
+    public void homepage() {
+        wd.findElement(By.cssSelector("#logotype-wrapper")).click();
+    }
 }

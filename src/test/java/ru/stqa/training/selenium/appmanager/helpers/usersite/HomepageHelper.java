@@ -3,6 +3,7 @@ package ru.stqa.training.selenium.appmanager.helpers.usersite;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import ru.stqa.training.selenium.appmanager.helpers.HelperBase;
 import ru.stqa.training.selenium.models.Product;
 import ru.stqa.training.selenium.models.Product.Sticker;
@@ -11,6 +12,7 @@ import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 import static java.lang.Double.parseDouble;
+import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
 public class HomepageHelper extends HelperBase {
     public HomepageHelper(WebDriver wd) {
@@ -66,6 +68,8 @@ public class HomepageHelper extends HelperBase {
     }
 
     public Product openRandomProductInCampaignsSection() {
+        wait.until(presenceOfElementLocated(By.cssSelector("#slider-wrapper")));
+
         List<WebElement> products = wd.findElements(By.cssSelector("#box-campaigns .product"));
         int randomProduct = ThreadLocalRandom.current().nextInt(0, products.size());
         String name = products.get(randomProduct)
@@ -79,10 +83,21 @@ public class HomepageHelper extends HelperBase {
                 .getText()
                 .substring(1));
         products.get(randomProduct).click();
+        wait.until(presenceOfElementLocated(By.cssSelector("h1")));
 
         return new Product()
                 .withName(name)
                 .withRegularPrice(regularPrice)
                 .withCampaignPrice(campaignPrice);
+    }
+
+    public List<WebElement> allRegularPrices() {
+        wait.until(presenceOfElementLocated(By.cssSelector("#slider-wrapper")));
+        return wd.findElements(By.cssSelector(".regular-price"));
+    }
+
+    public List<WebElement> allCampaignPrices() {
+        wait.until(presenceOfElementLocated(By.cssSelector("#slider-wrapper")));
+        return wd.findElements(By.cssSelector(".campaign-price"));
     }
 }

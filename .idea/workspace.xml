@@ -20,8 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cc52cb3-a665-4c10-8e77-8c7ed6d68616" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/usersite/ProductPageHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/homework4/RightProductOpenedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/homework4/PricesStylesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -30,15 +29,15 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/Sandbox.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/ApplicationManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/usersite/HomepageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/usersite/HomepageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/models/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/models/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/usersite/ProductPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/usersite/ProductPageHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/tests/Sandbox.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/tests/Sandbox.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/tests/homework4/RightProductOpenedTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/tests/homework4/RightProductOpenedTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/NavigationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/NavigationHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/usersite/HomepageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/usersite/HomepageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/usersite/ProductPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/usersite/ProductPageHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/Sandbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/Sandbox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/homework4/RightProductOpenedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/homework4/RightProductOpenedTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,17 +97,44 @@
       <recent name="D:\github repositories\Webdriver_Learning\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.RightProductOpenedTest">
-    <configuration name="ProductStickersTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.PricesStylesTest and 2 more">
+    <configuration name="PricesStylesTest and 1 more" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Webdriver_Learning.test" />
+      <option name="TEST_OBJECT" value="PATTERN" />
+      <properties />
+      <listeners />
+      <patterns>
+        <pattern testClass="ru.stqa.training.selenium.tests.homework4.PricesStylesTest" />
+        <pattern testClass="ru.stqa.training.selenium.tests.homework4.RightProductOpenedTest" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PricesStylesTest and 2 more" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Webdriver_Learning.test" />
+      <option name="TEST_OBJECT" value="PATTERN" />
+      <properties />
+      <listeners />
+      <patterns>
+        <pattern testClass="ru.stqa.training.selenium.tests.homework4.PricesStylesTest" />
+        <pattern testClass="ru.stqa.training.selenium.tests.homework4.RightProductOpenedTest" />
+        <pattern testClass="ru.stqa.training.selenium.tests.homework4.SortingTest" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PricesStylesTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Webdriver_Learning.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.training.selenium.tests.homework3.*" />
+          <option name="PATTERN" value="ru.stqa.training.selenium.tests.homework4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.tests.homework3" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.tests.homework3.ProductStickersTest" />
+      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.tests.homework4" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.tests.homework4.PricesStylesTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -116,7 +142,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RightProductOpenedTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RightProductOpenedTest.testCampaignPriceStyleOnCampaignProductPage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Webdriver_Learning.test" />
       <extension name="coverage">
         <pattern>
@@ -126,41 +152,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.tests.homework4" />
       <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.tests.homework4.RightProductOpenedTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SortingTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Webdriver_Learning.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.training.selenium.tests.homework4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.tests.homework4" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.tests.homework4.SortingTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SortingTest.testCountriesAreSortedAlphabetically" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Webdriver_Learning.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.training.selenium.tests.homework4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.tests.homework4" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.tests.homework4.SortingTest" />
-      <option name="METHOD_NAME" value="testCountriesAreSortedAlphabetically" />
+      <option name="METHOD_NAME" value="testCampaignPriceStyleOnCampaignProductPage" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -168,7 +160,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortingTest.testZonesOfCountriesAreSortedAlphabeticallyOnEditGeoZonePage" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RightProductOpenedTest.testRegularPriceStyleOnCampaignProductPage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Webdriver_Learning.test" />
       <extension name="coverage">
         <pattern>
@@ -177,8 +169,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.tests.homework4" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.tests.homework4.SortingTest" />
-      <option name="METHOD_NAME" value="testZonesOfCountriesAreSortedAlphabeticallyOnEditGeoZonePage" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.tests.homework4.RightProductOpenedTest" />
+      <option name="METHOD_NAME" value="testRegularPriceStyleOnCampaignProductPage" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -188,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.RightProductOpenedTest" />
-        <item itemvalue="TestNG.SortingTest.testCountriesAreSortedAlphabetically" />
-        <item itemvalue="TestNG.SortingTest" />
-        <item itemvalue="TestNG.SortingTest.testZonesOfCountriesAreSortedAlphabeticallyOnEditGeoZonePage" />
-        <item itemvalue="TestNG.ProductStickersTest" />
+        <item itemvalue="TestNG.PricesStylesTest and 2 more" />
+        <item itemvalue="TestNG.PricesStylesTest and 1 more" />
+        <item itemvalue="TestNG.PricesStylesTest" />
+        <item itemvalue="TestNG.RightProductOpenedTest.testCampaignPriceStyleOnCampaignProductPage" />
+        <item itemvalue="TestNG.RightProductOpenedTest.testRegularPriceStyleOnCampaignProductPage" />
       </list>
     </recent_temporary>
   </component>
@@ -236,28 +228,28 @@
     </state>
     <state x="504" y="190" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592451102554" />
     <state x="-1060" y="302" key="FileChooserDialogImpl/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591681256081" />
-    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1592744310656">
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1592757936504">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592744310656" />
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592757936504" />
     <state width="1637" height="153" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
-    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1592744310656">
+    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1592757936504">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592744310656" />
+    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592757936504" />
     <state width="1637" height="153" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
-    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1592744310655">
+    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1592757936504">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592744310655" />
+    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592757936504" />
     <state width="1637" height="153" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
-    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1592744310656">
+    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1592757936504">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592744310656" />
+    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592757936504" />
     <state width="1637" height="153" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1592678562341">
@@ -306,10 +298,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="702" y="146" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591937312995" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1592452812029">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1592751696884">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1592452812029" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1592751696884" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

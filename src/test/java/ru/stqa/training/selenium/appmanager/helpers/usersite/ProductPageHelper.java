@@ -2,6 +2,7 @@ package ru.stqa.training.selenium.appmanager.helpers.usersite;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import ru.stqa.training.selenium.appmanager.helpers.HelperBase;
 import ru.stqa.training.selenium.models.Product;
 
@@ -34,5 +35,13 @@ public class ProductPageHelper extends HelperBase {
         return new Product().withName(name)
                 .withRegularPrice(regularPrice)
                 .withCampaignPrice(campaignPrice);
+    }
+
+    public WebElement regularPrice() {
+        return wd.findElement(By.cssSelector("#box-product .regular-price"));
+    }
+
+    public WebElement campaignPrice() {
+        return wd.findElement(By.cssSelector("#box-product .campaign-price"));
     }
 }
