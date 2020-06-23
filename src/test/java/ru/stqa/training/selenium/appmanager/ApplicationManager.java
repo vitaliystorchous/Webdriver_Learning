@@ -11,6 +11,7 @@ import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import ru.stqa.training.selenium.appmanager.helpers.adminpanel.*;
+import ru.stqa.training.selenium.appmanager.helpers.usersite.CreateAccountPageHelper;
 import ru.stqa.training.selenium.appmanager.helpers.usersite.HomepageHelper;
 import ru.stqa.training.selenium.appmanager.helpers.usersite.ProductPageHelper;
 
@@ -82,6 +83,7 @@ public class ApplicationManager {
     private EditCountyPageHelper editCountyPageHelper;
     private EditGeoZonePageHelper editGeoZonePageHelper;
     private ProductPageHelper productPageHelper;
+    private CreateAccountPageHelper createAccountPageHelper;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -197,6 +199,7 @@ public class ApplicationManager {
         editCountyPageHelper = new EditCountyPageHelper(wd);
         editGeoZonePageHelper = new EditGeoZonePageHelper(wd);
         productPageHelper = new ProductPageHelper(wd);
+        createAccountPageHelper = new CreateAccountPageHelper(wd);
     }
 
     public void stop() {
@@ -434,5 +437,9 @@ public class ApplicationManager {
 
     public ProductPageHelper productPage() {
         return productPageHelper;
+    }
+
+    public CreateAccountPageHelper createAccountPage() {
+        return createAccountPageHelper;
     }
 }

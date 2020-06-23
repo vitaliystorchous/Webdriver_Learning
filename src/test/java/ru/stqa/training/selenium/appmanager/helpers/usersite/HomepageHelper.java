@@ -1,17 +1,20 @@
 package ru.stqa.training.selenium.appmanager.helpers.usersite;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import ru.stqa.training.selenium.appmanager.helpers.HelperBase;
 import ru.stqa.training.selenium.models.Product;
 import ru.stqa.training.selenium.models.Product.Sticker;
+import ru.stqa.training.selenium.models.User;
 
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 import static java.lang.Double.parseDouble;
+import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
 public class HomepageHelper extends HelperBase {
@@ -68,7 +71,7 @@ public class HomepageHelper extends HelperBase {
     }
 
     public Product openRandomProductInCampaignsSection() {
-        wait.until(presenceOfElementLocated(By.cssSelector("#slider-wrapper")));
+        waitHomepageIsOpened();
 
         List<WebElement> products = wd.findElements(By.cssSelector("#box-campaigns .product"));
         int randomProduct = ThreadLocalRandom.current().nextInt(0, products.size());
@@ -92,12 +95,45 @@ public class HomepageHelper extends HelperBase {
     }
 
     public List<WebElement> allRegularPrices() {
-        wait.until(presenceOfElementLocated(By.cssSelector("#slider-wrapper")));
+        waitHomepageIsOpened();
         return wd.findElements(By.cssSelector(".regular-price"));
     }
 
     public List<WebElement> allCampaignPrices() {
-        wait.until(presenceOfElementLocated(By.cssSelector("#slider-wrapper")));
+        waitHomepageIsOpened();
         return wd.findElements(By.cssSelector(".campaign-price"));
+    }
+
+    public void createNewCustomer() {
+        waitHomepageIsOpened();
+        wd.findElement(By.cssSelector("#box-account-login a")).click();
+    }
+
+    private void waitHomepageIsOpened() {
+        wait.until(presenceOfElementLocated(By.cssSelector("#slider-wrapper")));
+    }
+
+    public void logout() {
+        wait.until(elementToBeClickable(By.cssSelector("#box-account a[href*=logout]"))).click();
+    }
+
+    public void login(User user) {
+        wait.until(elementToBeClickable(By.cssSelector("[name=email]"))).click();
+        wd.findElement(By.cssSelector("[name=email]")).sendKeys(user.getEmail());
+
+        wd.findElement(By.cssSelector("[name=password]")).click();
+        wd.findElement(By.cssSelector("[name=password]")).sendKeys(user.getPassword());
+
+        wd.findElement(By.cssSelector("[name=login]")).click();
+        wait.until(presenceOfElementLocated(By.cssSelector("#box-account a[href*=logout]")));
+    }
+
+    public boolean userIsLoggedIn() {
+        try {
+            wait.until(presenceOfElementLocated(By.cssSelector("#box-account a[href*=logout]")));
+            return true;
+        } catch (TimeoutException ex) {
+            return false;
+        }
     }
 }
