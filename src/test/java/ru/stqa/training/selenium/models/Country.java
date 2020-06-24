@@ -10,6 +10,9 @@ public class Country {
     String name;
     int zonesAmount;
     Status status;
+    String taxIdFormat;
+    String postcodeFormat;
+    String countryCode;
 
 
     public String getName() {
@@ -36,6 +39,33 @@ public class Country {
 
     public Country withStatus(Status status) {
         this.status = status;
+        return this;
+    }
+
+    public String getTaxIdFormat() {
+        return taxIdFormat;
+    }
+
+    public Country withTaxIdFormat(String taxIdFormat) {
+        this.taxIdFormat = taxIdFormat;
+        return this;
+    }
+
+    public String getPostcodeFormat() {
+        return postcodeFormat;
+    }
+
+    public Country withPostcodeFormat(String postcodeFormat) {
+        this.postcodeFormat = postcodeFormat;
+        return this;
+    }
+
+    public String getCountryCode() {
+        return countryCode;
+    }
+
+    public Country withCountryCode(String countryCode) {
+        this.countryCode = countryCode;
         return this;
     }
 
