@@ -18,6 +18,7 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
     implementation 'org.apache.commons:commons-lang3:3.10'
     implementation 'mysql:mysql-connector-java:8.0.20'
+    implementation 'com.github.mifmif:generex:1.0.2'
 }
 
 tasks.withType(JavaCompile) {

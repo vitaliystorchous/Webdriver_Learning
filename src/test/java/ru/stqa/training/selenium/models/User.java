@@ -155,6 +155,7 @@ public class User {
                 ", postcode='" + postcode + '\'' +
                 ", city='" + city + '\'' +
                 ", country='" + country + '\'' +
+                ", zone='" + zone + '\'' +
                 ", email='" + email + '\'' +
                 ", phone='" + phone + '\'' +
                 ", newsletter=" + newsletter +
