@@ -20,26 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cc52cb3-a665-4c10-8e77-8c7ed6d68616" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/generators/Generator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/database/DBHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/usersite/CreateAccountPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/usersite/CreateAccountPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/generators/UserGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/models/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/tests/Sandbox.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/tests/Sandbox.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/tests/homework5/RegisterNewUserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/tests/homework5/RegisterNewUserTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/test/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/test/users.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/usersite/CreateAccountPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/usersite/CreateAccountPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/generators/UserGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/models/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/Sandbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/Sandbox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/homework5/RegisterNewUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/homework5/RegisterNewUserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/users.json" afterDir="false" />
@@ -104,20 +97,7 @@
       <recent name="D:\github repositories\Webdriver_Learning\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.RegisterNewUserTest.testNewUserCreation">
-    <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.generators.Generator" />
-      <module name="Webdriver_Learning.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.training.selenium.generators.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.RegisterNewUserTest">
     <configuration name="Sandbox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.tests.Sandbox" />
       <module name="Webdriver_Learning.test" />
@@ -158,6 +138,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegisterNewUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Webdriver_Learning.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.training.selenium.tests.homework5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.tests.homework5" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.tests.homework5.RegisterNewUserTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RegisterNewUserTest.testNewUserCreation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Webdriver_Learning.test" />
       <extension name="coverage">
@@ -178,8 +175,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.RegisterNewUserTest" />
         <item itemvalue="TestNG.RegisterNewUserTest.testNewUserCreation" />
-        <item itemvalue="Application.UserGenerator" />
         <item itemvalue="Application.Sandbox" />
         <item itemvalue="TestNG.PricesStylesTest and 2 more" />
         <item itemvalue="TestNG.PricesStylesTest and 1 more" />
@@ -230,52 +227,52 @@
     </state>
     <state x="504" y="190" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592451102554" />
     <state x="-1060" y="302" key="FileChooserDialogImpl/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591681256081" />
-    <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1593065567023">
+    <state width="1323" height="235" key="GridCell.Tab.0.bottom" timestamp="1593148161212">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593065567023" />
+    <state width="1323" height="235" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593148161212" />
     <state width="1637" height="153" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
-    <state width="1323" height="223" key="GridCell.Tab.0.center" timestamp="1593065567022">
+    <state width="1323" height="235" key="GridCell.Tab.0.center" timestamp="1593148161212">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593065567022" />
+    <state width="1323" height="235" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593148161212" />
     <state width="1637" height="153" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
-    <state width="1323" height="223" key="GridCell.Tab.0.left" timestamp="1593065567022">
+    <state width="1323" height="235" key="GridCell.Tab.0.left" timestamp="1593148161212">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593065567022" />
+    <state width="1323" height="235" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593148161212" />
     <state width="1637" height="153" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
-    <state width="1323" height="223" key="GridCell.Tab.0.right" timestamp="1593065567022">
+    <state width="1323" height="235" key="GridCell.Tab.0.right" timestamp="1593148161212">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593065567022" />
+    <state width="1323" height="235" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593148161212" />
     <state width="1637" height="153" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1593065566847">
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1593067261700">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593065566847" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593067261700" />
     <state width="1637" height="336" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591944000700" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591625656013" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1593065566846">
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1593067261700">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1593065566846" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1593067261700" />
     <state width="1637" height="336" key="GridCell.Tab.1.center/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591944000700" />
     <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591625656013" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1593065566846">
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1593067261700">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1593065566846" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1593067261700" />
     <state width="1637" height="336" key="GridCell.Tab.1.left/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591944000700" />
     <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591625656013" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1593065566846">
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1593067261700">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1593065566846" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1593067261700" />
     <state width="1637" height="336" key="GridCell.Tab.1.right/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591944000700" />
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591625656013" />
     <state x="557" y="321" key="ReplaceDuplicatesPrompt" timestamp="1593057275059">
@@ -311,7 +308,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/usersite/CreateAccountPageHelper.java</url>
-          <line>66</line>
+          <line>54</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>

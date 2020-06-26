@@ -1,5 +1,6 @@
 package ru.stqa.training.selenium.tests;
 
+import ru.stqa.training.selenium.appmanager.helpers.database.DBHelper;
 import ru.stqa.training.selenium.generators.Generator;
 import ru.stqa.training.selenium.models.User;
 
@@ -11,9 +12,7 @@ public class Sandbox {
 
 
     public static void main(String[] args) throws IOException, SQLException {
-        Generator generator = new Generator();
-        User user = generator.generateRandomUser();
-        System.out.println(user);
+        DBHelper.enableCapture();
     }
 
 }
