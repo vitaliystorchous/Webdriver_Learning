@@ -2,7 +2,7 @@ package ru.stqa.training.selenium.tests.homework4;
 
 import org.testng.annotations.Test;
 import ru.stqa.training.selenium.models.Country;
-import ru.stqa.training.selenium.models.Country.Status;
+import ru.stqa.training.selenium.models.Status;
 import ru.stqa.training.selenium.models.Zone;
 import ru.stqa.training.selenium.tests.TestBase;
 

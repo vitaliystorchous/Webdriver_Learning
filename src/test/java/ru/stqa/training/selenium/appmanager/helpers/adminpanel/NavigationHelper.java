@@ -4,9 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import ru.stqa.training.selenium.appmanager.helpers.HelperBase;
 
 import java.util.Properties;
+
+import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 
 public class NavigationHelper extends HelperBase {
 
@@ -310,5 +313,9 @@ public class NavigationHelper extends HelperBase {
 
     public void homepage() {
         wd.findElement(By.cssSelector("#logotype-wrapper")).click();
+    }
+
+    public void addNewProductPage() {
+        wait.until(elementToBeClickable(By.cssSelector("[href*=product].button"))).click();
     }
 }

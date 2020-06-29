@@ -84,6 +84,7 @@ public class ApplicationManager {
     private EditGeoZonePageHelper editGeoZonePageHelper;
     private ProductPageHelper productPageHelper;
     private CreateAccountPageHelper createAccountPageHelper;
+    private NewProductPageHelper newProductPageHelper;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -200,6 +201,7 @@ public class ApplicationManager {
         editGeoZonePageHelper = new EditGeoZonePageHelper(wd);
         productPageHelper = new ProductPageHelper(wd);
         createAccountPageHelper = new CreateAccountPageHelper(wd);
+        newProductPageHelper = new NewProductPageHelper(wd);
     }
 
     public void stop() {
@@ -441,5 +443,9 @@ public class ApplicationManager {
 
     public CreateAccountPageHelper createAccountPage() {
         return createAccountPageHelper;
+    }
+
+    public NewProductPageHelper addNewProductPage() {
+        return newProductPageHelper;
     }
 }

@@ -2,11 +2,6 @@ package ru.stqa.training.selenium.models;
 
 public class Country {
 
-    public enum Status{
-        ENABLED,
-        DISABLED
-    }
-
     String name;
     int zonesAmount;
     Status status;
