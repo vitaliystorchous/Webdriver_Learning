@@ -10,6 +10,7 @@ import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import ru.stqa.training.selenium.appmanager.helpers.EditProductPageHelper;
 import ru.stqa.training.selenium.appmanager.helpers.adminpanel.*;
 import ru.stqa.training.selenium.appmanager.helpers.usersite.CreateAccountPageHelper;
 import ru.stqa.training.selenium.appmanager.helpers.usersite.HomepageHelper;
@@ -85,6 +86,7 @@ public class ApplicationManager {
     private ProductPageHelper productPageHelper;
     private CreateAccountPageHelper createAccountPageHelper;
     private NewProductPageHelper newProductPageHelper;
+    private EditProductPageHelper editProductPageHelper;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -202,6 +204,7 @@ public class ApplicationManager {
         productPageHelper = new ProductPageHelper(wd);
         createAccountPageHelper = new CreateAccountPageHelper(wd);
         newProductPageHelper = new NewProductPageHelper(wd);
+        editProductPageHelper = new EditProductPageHelper(wd);
     }
 
     public void stop() {
@@ -447,5 +450,9 @@ public class ApplicationManager {
 
     public NewProductPageHelper addNewProductPage() {
         return newProductPageHelper;
+    }
+
+    public EditProductPageHelper editProductPage() {
+        return editProductPageHelper;
     }
 }

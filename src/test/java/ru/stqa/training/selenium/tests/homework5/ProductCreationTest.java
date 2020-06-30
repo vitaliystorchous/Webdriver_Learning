@@ -6,6 +6,7 @@ import ru.stqa.training.selenium.models.Product;
 import ru.stqa.training.selenium.tests.TestBase;
 
 import java.sql.SQLException;
+import java.util.Collections;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -23,8 +24,9 @@ public class ProductCreationTest extends TestBase {
         app.addNewProductPage().createProduct(randomProduct);
         app.catalogPage().openCategory(randomProduct.getDefaultCategory());
         app.catalogPage().openProduct(randomProduct.getName());
-        System.out.println("so far so good");
-        /*Product createdProduct = app.editProductPage().getProduct(true, true, false, true, false, false);
-        assertThat(randomProduct, equalTo(createdProduct));*/
+        Product createdProduct = app.editProductPage().getProduct(true, true, false, true, false, false);
+        Collections.sort(randomProduct.getCategories());
+        Collections.sort(createdProduct.getCategories());
+        assertThat(randomProduct, equalTo(createdProduct));
     }
 }

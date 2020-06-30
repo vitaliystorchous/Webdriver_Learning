@@ -17,11 +17,11 @@ public class GeneratorHelper {
         return description.toString();
     }
 
-    public GregorianCalendar getRandomDate(int fromYearIncluding, int toYearExluding) {
+    public GregorianCalendar getRandomDate(int fromYearIncluding, int toYearExcluding) {
 
         GregorianCalendar gc = new GregorianCalendar();
 
-        int year = nextInt(fromYearIncluding, toYearExluding);
+        int year = nextInt(fromYearIncluding, toYearExcluding);
 
         gc.set(Calendar.YEAR, year);
 
@@ -32,8 +32,11 @@ public class GeneratorHelper {
         return gc;
     }
 
-    public String getRandomStringValueFromDB(String db, String user, String password, String table, String column)
-            throws SQLException {
+    public String getRandomStringValueFromDB(String db,
+                                             String user,
+                                             String password,
+                                             String table,
+                                             String column) throws SQLException {
         Connection conn = DriverManager
                 .getConnection("jdbc:mysql://localhost:3306/" + db +
                         "?user=" + user +
@@ -55,14 +58,18 @@ public class GeneratorHelper {
         return randomValue;
     }
 
-    public String generatePrice(double valueFromIncluding, double valueToExcluding) {
+    public String generateTwoDecimalNumber(double valueFromIncluding, double valueToExcluding) {
         double randomDouble = RandomUtils.nextDouble(valueFromIncluding, valueToExcluding);
         String price = Double.toString(randomDouble);
         int indexOfDot = price.indexOf(".");
         return price.substring(0, indexOfDot + 3);
     }
 
-    public List<String> getRandomStringValuesFromDB(String db, String user, String password, String table, String column) throws SQLException {
+    public List<String> getRandomStringValuesFromDB(String db,
+                                                    String user,
+                                                    String password,
+                                                    String table,
+                                                    String column) throws SQLException {
         Connection conn = DriverManager
                 .getConnection("jdbc:mysql://localhost:3306/" + db +
                         "?user=" + user +

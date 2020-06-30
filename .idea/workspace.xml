@@ -20,39 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cc52cb3-a665-4c10-8e77-8c7ed6d68616" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/NewProductPageHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/generators/GeneratorHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/models/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/homework5/ProductCreationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test_files/road-1072823__340.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/EditProductPageHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CountriesPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CountriesPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/NavigationHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/NavigationHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/generators/Generator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/generators/Generator$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/generators/Generator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/generators/Generator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/models/Country$Status.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/models/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/models/Country.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/models/Product$Sticker.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/models/Product$Sticker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/models/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/models/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/tests/Sandbox.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/tests/Sandbox.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/tests/homework4/SortingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/tests/homework4/SortingTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/test/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/test/users.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CatalogPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CatalogPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CountriesPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CountriesPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/NavigationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/NavigationHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/generators/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/generators/Generator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/models/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/models/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/generators/GeneratorHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/generators/GeneratorHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/models/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/Sandbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/Sandbox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/homework4/SortingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/homework4/SortingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/homework5/ProductCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/homework5/ProductCreationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +91,20 @@
       <recent name="D:\github repositories\Webdriver_Learning\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ProductCreationTest">
+  <component name="RunManager" selected="TestNG.Sandbox.test">
+    <configuration name="Sandbox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.tests.Sandbox" />
+      <module name="Webdriver_Learning.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.training.selenium.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductCreationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Webdriver_Learning.test" />
       <extension name="coverage">
@@ -147,23 +134,6 @@
       <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.tests.homework5.ProductCreationTest" />
       <option name="METHOD_NAME" value="testProductionCreation" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegisterNewUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Webdriver_Learning.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.training.selenium.tests.homework5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.tests.homework5" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.tests.homework5.RegisterNewUserTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -207,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Sandbox.test" />
+        <item itemvalue="TestNG.Sandbox" />
+        <item itemvalue="Application.Sandbox" />
         <item itemvalue="TestNG.ProductCreationTest" />
         <item itemvalue="TestNG.ProductCreationTest.testProductionCreation" />
-        <item itemvalue="TestNG.Sandbox" />
-        <item itemvalue="TestNG.Sandbox.test" />
-        <item itemvalue="TestNG.RegisterNewUserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -241,10 +211,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="544" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1593447342862">
+    <state x="102" y="114" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1593494125284">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="544" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1593447342862" />
+    <state x="102" y="114" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1593494125284" />
+    <state x="544" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1593493639949">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="544" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1593493639949" />
     <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591937311183" />
     <state x="476" y="187" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1593445939526">
       <screen x="0" y="0" width="1366" height="728" />
@@ -268,52 +242,52 @@
     </state>
     <state x="504" y="190" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592451102554" />
     <state x="-1060" y="302" key="FileChooserDialogImpl/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591681256081" />
-    <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1593458326178">
+    <state width="1323" height="212" key="GridCell.Tab.0.bottom" timestamp="1593496799956">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593458326178" />
+    <state width="1323" height="212" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593496799956" />
     <state width="1637" height="153" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
-    <state width="1323" height="223" key="GridCell.Tab.0.center" timestamp="1593458326177">
+    <state width="1323" height="212" key="GridCell.Tab.0.center" timestamp="1593496799956">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593458326177" />
+    <state width="1323" height="212" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593496799956" />
     <state width="1637" height="153" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
-    <state width="1323" height="223" key="GridCell.Tab.0.left" timestamp="1593458326177">
+    <state width="1323" height="212" key="GridCell.Tab.0.left" timestamp="1593496799956">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593458326177" />
+    <state width="1323" height="212" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593496799956" />
     <state width="1637" height="153" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
-    <state width="1323" height="223" key="GridCell.Tab.0.right" timestamp="1593458326177">
+    <state width="1323" height="212" key="GridCell.Tab.0.right" timestamp="1593496799956">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593458326177" />
+    <state width="1323" height="212" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593496799956" />
     <state width="1637" height="153" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1593458362710">
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1593458613101">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593458362710" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593458613101" />
     <state width="1637" height="336" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591944000700" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591625656013" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1593458362710">
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1593458613101">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1593458362710" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1593458613101" />
     <state width="1637" height="336" key="GridCell.Tab.1.center/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591944000700" />
     <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591625656013" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1593458362710">
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1593458613101">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1593458362710" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1593458613101" />
     <state width="1637" height="336" key="GridCell.Tab.1.left/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591944000700" />
     <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591625656013" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1593458362710">
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1593458613101">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1593458362710" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1593458613101" />
     <state width="1637" height="336" key="GridCell.Tab.1.right/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591944000700" />
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591625656013" />
     <state x="557" y="321" key="ReplaceDuplicatesPrompt" timestamp="1593057275059">
@@ -331,10 +305,10 @@
     </state>
     <state x="-1132" y="372" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592193696935" />
     <state x="626" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591762262973" />
-    <state x="413" y="114" key="extract.method.dialog" timestamp="1593058400821">
+    <state x="413" y="114" key="extract.method.dialog" timestamp="1593491775699">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="114" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1593058400821" />
+    <state x="413" y="114" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1593491775699" />
     <state x="702" y="146" key="refactoring.ChangeSignatureDialog" timestamp="1591937312995">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -351,11 +325,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/usersite/CreateAccountPageHelper.java</url>
           <line>54</line>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/homework5/ProductCreationTest.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
