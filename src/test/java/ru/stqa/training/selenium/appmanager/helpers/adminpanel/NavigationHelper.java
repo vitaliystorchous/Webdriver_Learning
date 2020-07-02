@@ -5,8 +5,10 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import ru.stqa.training.selenium.appmanager.ApplicationManager;
 import ru.stqa.training.selenium.appmanager.helpers.HelperBase;
 
+import java.net.MalformedURLException;
 import java.util.Properties;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
@@ -15,10 +17,11 @@ public class NavigationHelper extends HelperBase {
 
     private final Properties properties;
 
-    public NavigationHelper(WebDriver wd, Properties properties) {
-        super(wd);
-        this.properties = properties;
+    public NavigationHelper(ApplicationManager app) {
+        super(app);
+        properties = app.getProperties();
     }
+
 
     public void adminPanel() {
         wd.navigate().to("http://localhost/litecart/admin/");

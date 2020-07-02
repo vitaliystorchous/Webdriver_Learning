@@ -3,8 +3,10 @@ package ru.stqa.training.selenium.appmanager.helpers.adminpanel;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import ru.stqa.training.selenium.appmanager.ApplicationManager;
 import ru.stqa.training.selenium.appmanager.helpers.HelperBase;
 
+import java.net.MalformedURLException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,8 +16,9 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClick
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
 public class CatalogPageHelper extends HelperBase {
-    public CatalogPageHelper(WebDriver wd) {
-        super(wd);
+
+    public CatalogPageHelper(ApplicationManager app) {
+        super(app);
     }
 
     public void openCategory(String defaultCategory) throws SQLException {

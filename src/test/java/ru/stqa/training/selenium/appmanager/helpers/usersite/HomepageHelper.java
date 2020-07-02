@@ -5,11 +5,13 @@ import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import ru.stqa.training.selenium.appmanager.ApplicationManager;
 import ru.stqa.training.selenium.appmanager.helpers.HelperBase;
 import ru.stqa.training.selenium.models.Product;
 import ru.stqa.training.selenium.models.Product.Sticker;
 import ru.stqa.training.selenium.models.User;
 
+import java.net.MalformedURLException;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -18,8 +20,9 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClick
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
 public class HomepageHelper extends HelperBase {
-    public HomepageHelper(WebDriver wd) {
-        super(wd);
+
+    public HomepageHelper(ApplicationManager app) {
+        super(app);
     }
 
     public List<Product> allProducts() {

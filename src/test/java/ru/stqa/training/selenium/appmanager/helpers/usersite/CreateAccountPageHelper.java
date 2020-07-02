@@ -3,15 +3,19 @@ package ru.stqa.training.selenium.appmanager.helpers.usersite;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
+import ru.stqa.training.selenium.appmanager.ApplicationManager;
 import ru.stqa.training.selenium.appmanager.helpers.HelperBase;
 import ru.stqa.training.selenium.models.User;
+
+import java.net.MalformedURLException;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
 public class CreateAccountPageHelper extends HelperBase {
-    public CreateAccountPageHelper(WebDriver wd) {
-        super(wd);
+
+    public CreateAccountPageHelper(ApplicationManager app) {
+        super(app);
     }
 
     private void waitCreateAccountPageIsOpened() {

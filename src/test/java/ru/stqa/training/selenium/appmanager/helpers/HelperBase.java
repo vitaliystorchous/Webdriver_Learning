@@ -2,8 +2,10 @@ package ru.stqa.training.selenium.appmanager.helpers;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import ru.stqa.training.selenium.appmanager.ApplicationManager;
 
 import java.io.File;
+import java.net.MalformedURLException;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
@@ -11,13 +13,15 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class HelperBase {
 
+    ApplicationManager app;
     protected WebDriver wd;
     protected WebDriverWait wait;
     protected long standardWaitDurationSec = 10;
 
-    public HelperBase(WebDriver wd) {
-        this.wd = wd;
-        this.wait = new WebDriverWait(wd, standardWaitDurationSec);
+    public HelperBase(ApplicationManager app) {
+        this.app = app;
+        this.wd = app.getDriver();
+        this.wait = app.getWait();
     }
 
     protected void click(By locator) {

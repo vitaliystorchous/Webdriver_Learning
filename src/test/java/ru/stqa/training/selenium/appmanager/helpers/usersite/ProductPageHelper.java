@@ -3,14 +3,18 @@ package ru.stqa.training.selenium.appmanager.helpers.usersite;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import ru.stqa.training.selenium.appmanager.ApplicationManager;
 import ru.stqa.training.selenium.appmanager.helpers.HelperBase;
 import ru.stqa.training.selenium.models.Product;
+
+import java.net.MalformedURLException;
 
 import static java.lang.Double.parseDouble;
 
 public class ProductPageHelper extends HelperBase {
-    public ProductPageHelper(WebDriver wd) {
-        super(wd);
+
+    public ProductPageHelper(ApplicationManager app) {
+        super(app);
     }
 
     public Product getProduct() {

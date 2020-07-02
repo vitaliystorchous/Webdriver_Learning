@@ -5,9 +5,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import ru.stqa.training.selenium.appmanager.ApplicationManager;
 import ru.stqa.training.selenium.appmanager.helpers.HelperBase;
 import ru.stqa.training.selenium.models.Product;
 
+import java.net.MalformedURLException;
 import java.util.Calendar;
 
 import static java.lang.Boolean.parseBoolean;
@@ -15,8 +17,9 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClick
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
 public class NewProductPageHelper extends HelperBase {
-    public NewProductPageHelper(WebDriver wd) {
-        super(wd);
+
+    public NewProductPageHelper(ApplicationManager app) {
+        super(app);
     }
 
     public void createProduct(Product product) {

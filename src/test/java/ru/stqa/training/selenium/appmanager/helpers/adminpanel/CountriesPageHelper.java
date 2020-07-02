@@ -3,18 +3,21 @@ package ru.stqa.training.selenium.appmanager.helpers.adminpanel;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import ru.stqa.training.selenium.appmanager.ApplicationManager;
 import ru.stqa.training.selenium.appmanager.helpers.HelperBase;
 import ru.stqa.training.selenium.models.Country;
 import ru.stqa.training.selenium.models.Status;
 
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfAllElementsLocatedBy;
 
 public class CountriesPageHelper extends HelperBase {
-    public CountriesPageHelper(WebDriver wd) {
-        super(wd);
+
+    public CountriesPageHelper(ApplicationManager app) {
+        super(app);
     }
 
     public List<Country> allCountries() {
