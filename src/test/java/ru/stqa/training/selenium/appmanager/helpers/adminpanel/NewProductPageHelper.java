@@ -39,12 +39,16 @@ public class NewProductPageHelper extends HelperBase {
         type(By.cssSelector("[name*=name]"), product.getName());
         type(By.cssSelector("[name=code]"), product.getCode());
 
-        for (String category : product.getCategories()) {
-            WebElement categoryCheckbox = wd.findElement(
-                    By.cssSelector("[name*=categories][data-name='" + category + "']"));
-            boolean checked = parseBoolean(categoryCheckbox.getAttribute("checked"));
-            if (! checked) {
-                categoryCheckbox.click();
+        for (WebElement category : wd.findElements(By.cssSelector("[name=\"categories[]\"]"))) {
+            boolean checked = parseBoolean(category.getAttribute("checked"));
+            if (product.getCategories().contains(category.getAttribute("data-name"))) {
+                if (! checked) {
+                    category.click();
+                }
+            } else {
+                if (checked) {
+                    category.click();
+                }
             }
         }
 
@@ -65,22 +69,25 @@ public class NewProductPageHelper extends HelperBase {
         Select soldOutStatus = new Select(wd.findElement(By.cssSelector("[name=sold_out_status_id]")));
         soldOutStatus.selectByVisibleText(product.getSoldOutStatus());
 
-        wd.findElement(By.cssSelector("[name*=new_images]")).sendKeys(product.getImage().getPath());
+        wd.findElement(By.cssSelector("[name*=new_images]"))
+                .sendKeys(System.getProperty("user.dir"),
+                        "\\",
+                        product.getImage().getPath());
 
         StringBuilder dateValidFrom = new StringBuilder();
-        dateValidFrom.append(product.getDateValidFrom().get(Calendar.DAY_OF_MONTH));
-        int monthFrom = product.getDateValidFrom().get(Calendar.MONTH) + 1;
+        dateValidFrom.append(product.getDateValidFrom().getDay());
+        int monthFrom = product.getDateValidFrom().getMonth();
         if (monthFrom < 10) { dateValidFrom.append(0).append(monthFrom); }
         else { dateValidFrom.append(monthFrom); }
-        dateValidFrom.append(product.getDateValidFrom().get(Calendar.YEAR));
+        dateValidFrom.append(product.getDateValidFrom().getYear());
         wd.findElement(By.cssSelector("[name=date_valid_from]")).sendKeys(dateValidFrom.toString());
 
         StringBuilder dateValidTo = new StringBuilder();
-        dateValidTo.append(product.getDateValidTo().get(Calendar.DAY_OF_MONTH));
-        int monthTo = product.getDateValidTo().get(Calendar.MONTH) + 1;
+        dateValidTo.append(product.getDateValidTo().getDay());
+        int monthTo = product.getDateValidTo().getMonth();
         if (monthTo < 10) { dateValidTo.append(0).append(monthTo); }
         else { dateValidTo.append(monthTo); }
-        dateValidTo.append(product.getDateValidTo().get(Calendar.YEAR));
+        dateValidTo.append(product.getDateValidTo().getYear());
         wd.findElement(By.cssSelector("[name=date_valid_to]")).sendKeys(dateValidTo.toString());
 
         click(By.cssSelector("[href*=tab-information]"));

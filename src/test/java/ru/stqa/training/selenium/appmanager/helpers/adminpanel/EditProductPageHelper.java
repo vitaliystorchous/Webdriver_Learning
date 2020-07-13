@@ -1,18 +1,24 @@
 package ru.stqa.training.selenium.appmanager.helpers.adminpanel;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import ru.stqa.training.selenium.appmanager.ApplicationManager;
 import ru.stqa.training.selenium.appmanager.helpers.HelperBase;
+import ru.stqa.training.selenium.models.standardModels.Date;
 import ru.stqa.training.selenium.models.Product;
 import ru.stqa.training.selenium.models.Status;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
+import static java.lang.Integer.parseInt;
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
 public class EditProductPageHelper extends HelperBase {
@@ -26,7 +32,7 @@ public class EditProductPageHelper extends HelperBase {
                               boolean dataTab,
                               boolean pricesTab,
                               boolean optionsTab,
-                              boolean optionsStocksTab) {
+                              boolean optionsStocksTab) throws IOException {
         Status status = null;
         String name = null;
         String code = null;
@@ -34,6 +40,10 @@ public class EditProductPageHelper extends HelperBase {
         String defaultCategory = null;
         List<String> productGroups = null;
         String quantity = null;
+        String soldOutStatus = null;
+        File image = null;
+        Date dateValidFrom = null;
+        Date dateValidTo = null;
 
         if (generalTab) {
             status = getProductStatus();
@@ -43,26 +53,50 @@ public class EditProductPageHelper extends HelperBase {
             defaultCategory = getProductDefaultCategory();
             productGroups = getProductGroups();
             quantity = getProductQuantity();
-
-
-            //continue from image getting. You need to rewrite the equals method of Product class so it compares
-            //images' checksums. checksum of product's image you can get in the DB (lc_products_images table) or
-            //you can try to download the image and get checksum form downloaded one (or try to get it without
-            //downloading if it possible
-
-            //get day, month, year of the field with date and create a GregorianCalendar instance using those values
+            soldOutStatus = getSoldOutStatus();
+            image = getProductImage();
+            dateValidFrom = getDateFrom(By.cssSelector("[name=date_valid_from]"));
+            dateValidTo = getDateFrom(By.cssSelector("[name='date_valid_to']"));
         }
 
-        if (informationTab) {
 
+        String manufacturer = null;
+        String keyword = null;
+        String shortDescription = null;
+        String description = null;
+        String headTitle = null;
+        String metaDescription = null;
+
+        if (informationTab) {
+            wd.findElement(By.cssSelector("[href='#tab-information']")).click();
+            wait.until(presenceOfElementLocated(By.cssSelector("[name=\"manufacturer_id\"]")));
+
+            manufacturer = getManufacturer();
+            keyword = getKeyword();
+            shortDescription = getShortDescription();
+            description = getDescription();
+            headTitle = getHeadTitle();
+            metaDescription = getMetaDescription();
         }
 
         if (dataTab) {
 
         }
 
-        if (pricesTab) {
 
+        String purchasePrice = null;
+        String purchasePriceCurrency = null;
+        String priceUSD = null;
+        String priceEUR = null;
+
+        if (pricesTab) {
+            wd.findElement(By.cssSelector("[href=\"#tab-prices\"]")).click();
+            wait.until(presenceOfElementLocated(By.cssSelector("[name=\"purchase_price\"]")));
+
+            purchasePrice = getPurchasePrice();
+            purchasePriceCurrency = getPurchasePriceCurrency();
+            priceUSD = getPriceUSD();
+            priceEUR = getPriceEUR();
         }
 
         if (optionsTab) {
@@ -74,7 +108,105 @@ public class EditProductPageHelper extends HelperBase {
         }
 
         return new Product()
-                .withStatus(status);
+                .withStatus(status)
+                .withName(name)
+                .withCode(code)
+                .withCategories(categories)
+                .withDefaultCategory(defaultCategory)
+                .withProductGroups(productGroups)
+                .withQuantity(quantity)
+                .withSoldOutStatus(soldOutStatus)
+                .withImage(image)
+                .withDateValidFrom(dateValidFrom)
+                .withDateValidTo(dateValidTo)
+                .withManufacturer(manufacturer)
+                .withKeyword(keyword)
+                .withShortDescription(shortDescription)
+                .withDescription(description)
+                .withHeadTitle(headTitle)
+                .withMetaDescription(metaDescription)
+                .withPurchasePrice(purchasePrice)
+                .withPurchasePriceCurrency(purchasePriceCurrency)
+                .withPriceUSD(priceUSD)
+                .withPriceEUR(priceEUR);
+    }
+
+    private String getSoldOutStatus() {
+        Select soldOutStatusDropdown = new Select(wd.findElement(By.cssSelector("[name=\"sold_out_status_id\"]")));
+        return soldOutStatusDropdown.getFirstSelectedOption().getText();
+    }
+
+    private String getPriceEUR() {
+        return wd.findElement(By.cssSelector("[name=\"prices[EUR]\"]")).getAttribute("value");
+    }
+
+    private String getPriceUSD() {
+        return wd.findElement(By.cssSelector("[name=\"prices[USD]\"]")).getAttribute("value");
+    }
+
+    private String getPurchasePriceCurrency() {
+        Select purchasePriceCurrencyDropdown = new Select(wd.findElement(By.cssSelector("[name=\"purchase_price_currency_code\"]")));
+        return purchasePriceCurrencyDropdown.getFirstSelectedOption().getText();
+    }
+
+    private String getPurchasePrice() {
+        return wd.findElement(By.cssSelector("[name=\"purchase_price\"]")).getAttribute("value");
+    }
+
+    private String getMetaDescription() {
+        return wd.findElement(By.cssSelector("[name=\"meta_description[en]\"]")).getAttribute("value");
+    }
+
+    private String getHeadTitle() {
+        return wd.findElement(By.cssSelector("[name=\"head_title[en]\"]")).getAttribute("value");
+    }
+
+    private String getDescription() {
+        return wd.findElement(By.cssSelector(".trumbowyg-editor")).getText();
+    }
+
+    private String getShortDescription() {
+        return wd.findElement(By.cssSelector("[name=\"short_description[en]\"]")).getAttribute("value");
+    }
+
+    private String getKeyword() {
+        return wd.findElement(By.cssSelector("[name=\"keywords\"]")).getAttribute("value");
+    }
+
+    private String getManufacturer() {
+        Select manufacturer = new Select(wd.findElement(By.cssSelector("[name=\"manufacturer_id\"]")));
+        return manufacturer.getFirstSelectedOption().getText();
+    }
+
+    private Date getDateFrom(By locator) {
+        Date date = new Date();
+
+        String dateS = wait.until(presenceOfElementLocated(locator)).getAttribute("value");
+        int year = parseInt(dateS.substring(0, 4));
+        int month = parseInt(dateS.substring(5, 7));
+        int day = parseInt(dateS.substring(8));
+
+        date.withYear(year);
+        date.withMonth(month);
+        date.withDay(day);
+
+        return date;
+    }
+
+    private File getProductImage() throws IOException {
+        WebElement imageWeb = wd.findElement(By.cssSelector("#table-images img"));
+        String j = imageWeb.getAttribute("currentSrc");
+        URL imageURL = null;
+        try {
+            imageURL = new URL(j);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        BufferedImage saveImage = ImageIO.read(imageURL);
+        File downloadedImage = new File("src/test/resources/for_tests/ImagesForProductCreationTest/downloadedFile.jpg");
+        if (downloadedImage.exists()) { downloadedImage.delete(); }
+        ImageIO.write(saveImage, "jpg", downloadedImage);
+        return  downloadedImage;
     }
 
     private String getProductQuantity() {

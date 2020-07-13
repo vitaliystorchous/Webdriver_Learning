@@ -5,20 +5,16 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import com.mifmif.common.regex.Generex;
 import org.apache.commons.lang3.RandomUtils;
-import ru.stqa.training.selenium.models.Country;
-import ru.stqa.training.selenium.models.Product;
-import ru.stqa.training.selenium.models.Status;
-import ru.stqa.training.selenium.models.User;
+import ru.stqa.training.selenium.models.*;
 
 import java.io.*;
 import java.sql.*;
-import java.util.GregorianCalendar;
 import java.util.List;
 
 import static org.apache.commons.lang3.RandomStringUtils.random;
 import static org.apache.commons.lang3.RandomUtils.nextInt;
 
-public class Generator extends GeneratorHelper {
+public class Generator extends ModelsHelper {
 
     public User generateRandomUser() throws SQLException, IOException {
 

@@ -56,7 +56,6 @@ public class CatalogPageHelper extends HelperBase {
         st.close();
         conn.close();
 
-        System.out.println(categories);
         for (int i = categories.size() - 1; i >= 0; i--) {
             wait.until(elementToBeClickable(By.linkText(categories.get(i)))).click();
         }

@@ -20,138 +20,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cc52cb3-a665-4c10-8e77-8c7ed6d68616" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/EditProductPageHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/models/standardModels/Date.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/models/standardModels/Image.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/ApplicationManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/EditProductPageHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/HelperBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/HelperBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/AdvancedSettingsPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/AdvancedSettingsPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CatalogCsvImportExportPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CatalogCsvImportExportPageHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CatalogPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CatalogPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CheckoutSettingsPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CheckoutSettingsPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CountriesPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CountriesPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CurrenciesPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CurrenciesPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CustomerModulesPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CustomerModulesPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CustomersCsvImportExportPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CustomersCsvImportExportPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CustomersPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CustomersPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/DefaultsSettingsPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/DefaultsSettingsPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/DeliveryStatusesPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/DeliveryStatusesPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/EditCountyPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/EditCountyPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/EditGeoZonePageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/EditGeoZonePageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/GeneralSettingsPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/GeneralSettingsPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/GeoZonesPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/GeoZonesPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/ImagesSettingsPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/ImagesSettingsPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/JobModulesPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/JobModulesPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/LanguagesPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/LanguagesPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/ListingSettingsPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/ListingSettingsPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/LogotypePageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/LogotypePageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/ManufacturersPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/ManufacturersPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/MonthlySalesPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/MonthlySalesPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/MostShoppingCustomersPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/MostShoppingCustomersPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/MostSoldProductsPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/MostSoldProductsPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/NavigationHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/NavigationHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/NewProductPageHelper$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/NewProductPageHelper$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/EditProductPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/EditProductPageHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/NewProductPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/NewProductPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/NewsletterPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/NewsletterPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OptionGroupsPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OptionGroupsPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OrderActionModulesPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OrderActionModulesPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OrderStatusesPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OrderStatusesPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OrderSuccessModulesPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OrderSuccessModulesPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OrderTotalModulesPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OrderTotalModulesPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OrdersPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OrdersPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/PagesPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/PagesPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/PaymentModulesPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/PaymentModulesPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/ProductGroupsPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/ProductGroupsPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/QuantityUnitsPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/QuantityUnitsPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/ScanFilesForTranslationsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SearchTranslationsPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SearchTranslationsPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SecuritySettingsPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SecuritySettingsPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SettingsPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SettingsPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/ShippingModulesPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/ShippingModulesPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SlidesPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SlidesPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SoldOutStatusesPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SoldOutStatusesPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/StorageEncodingPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/StorageEncodingPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SuppliersPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SuppliersPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/TaxClassesPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/TaxClassesPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/TaxRatesPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/TaxRatesPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/TemplatePageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/TemplatePageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/TranslationsCSVImportExportPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/TranslationsCSVImportExportPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/UsersPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/UsersPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/VQmodsPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/VQmodsPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/usersite/CreateAccountPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/usersite/CreateAccountPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/usersite/HomepageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/usersite/HomepageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/usersite/ProductPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/usersite/ProductPageHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/generators/Generator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/generators/Generator$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/generators/Generator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/generators/Generator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/generators/GeneratorHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/models/Product$Sticker.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/models/Product$Sticker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/models/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/models/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/tests/Sandbox.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/tests/Sandbox.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/tests/homework3/AdminSiteNavigationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/tests/homework3/AdminSiteNavigationTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/tests/homework5/ProductCreationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/tests/homework5/ProductCreationTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/EditProductPageHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/HelperBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/AdvancedSettingsPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/AdvancedSettingsPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CatalogCsvImportExportPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CatalogCsvImportExportPageHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/test_files/2052e78c02f27d93ae336f9907aab72e4b58b618100x75_fob.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/test_files/Screenshot_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/test_files/blackImage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/test_files/darkImage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/test_files/purpleImage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/test_files/resizedImage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/test_files/road-1072823__340.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/test_files/seleniumFullScreenshot.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/test_files/seleniumScreenshot.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CatalogPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CatalogPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CheckoutSettingsPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CheckoutSettingsPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CountriesPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CountriesPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CurrenciesPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CurrenciesPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CustomerModulesPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CustomerModulesPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CustomersCsvImportExportPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CustomersCsvImportExportPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CustomersPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CustomersPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/DefaultsSettingsPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/DefaultsSettingsPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/DeliveryStatusesPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/DeliveryStatusesPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/EditCountyPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/EditCountyPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/EditGeoZonePageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/EditGeoZonePageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/GeneralSettingsPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/GeneralSettingsPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/GeoZonesPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/GeoZonesPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/ImagesSettingsPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/ImagesSettingsPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/JobModulesPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/JobModulesPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/LanguagesPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/LanguagesPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/ListingSettingsPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/ListingSettingsPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/LogotypePageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/LogotypePageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/ManufacturersPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/ManufacturersPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/MonthlySalesPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/MonthlySalesPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/MostShoppingCustomersPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/MostShoppingCustomersPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/MostSoldProductsPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/MostSoldProductsPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/NavigationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/NavigationHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/EditProductPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/EditProductPageHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/NewProductPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/NewProductPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/NewsletterPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/NewsletterPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OptionGroupsPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OptionGroupsPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OrderActionModulesPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OrderActionModulesPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OrderStatusesPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OrderStatusesPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OrderSuccessModulesPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OrderSuccessModulesPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OrderTotalModulesPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OrderTotalModulesPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OrdersPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/OrdersPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/PagesPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/PagesPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/PaymentModulesPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/PaymentModulesPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/ProductGroupsPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/ProductGroupsPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/QuantityUnitsPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/QuantityUnitsPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/ScanFilesForTranslationsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/ScanFilesForTranslationsPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SearchTranslationsPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SearchTranslationsPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SecuritySettingsPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SecuritySettingsPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SettingsPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SettingsPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/ShippingModulesPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/ShippingModulesPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SlidesPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SlidesPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SoldOutStatusesPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SoldOutStatusesPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/StorageEncodingPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/StorageEncodingPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SuppliersPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/SuppliersPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/TaxClassesPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/TaxClassesPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/TaxRatesPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/TaxRatesPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/TemplatePageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/TemplatePageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/TranslationsCSVImportExportPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/TranslationsCSVImportExportPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/UsersPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/UsersPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/VQmodsPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/VQmodsPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/usersite/CreateAccountPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/usersite/CreateAccountPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/usersite/HomepageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/usersite/HomepageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/usersite/ProductPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/usersite/ProductPageHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/generators/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/generators/Generator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/generators/GeneratorHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/models/ModelsHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/models/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/Sandbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/Sandbox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/homework5/ProductCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/homework5/ProductCreationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test_files/2052e78c02f27d93ae336f9907aab72e4b58b618100x75_fob.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test_files/Screenshot_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test_files/blackImage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test_files/darkImage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test_files/purpleImage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test_files/resizedImage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test_files/road-1072823__340.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/for_tests/ImagesForProductCreationTest/Image_For_Product_Creation.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test_files/seleniumFullScreenshot.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test_files/seleniumScreenshot.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,6 +117,9 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub_repositories\Webdriver_Learning\src\test\resources\for_tests\ImagesForProductCreationTest" />
+    </key>
     <key name="MoveInnerDialog.RECENTS_KEY">
       <recent name="ru.stqa.training.selenium.models" />
     </key>
@@ -216,20 +133,7 @@
       <recent name="D:\github repositories\Webdriver_Learning\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Sandbox">
-    <configuration name="Sandbox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.tests.Sandbox" />
-      <module name="Webdriver_Learning.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.training.selenium.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.ProductCreationTest.testProductionCreation">
     <configuration name="PricesStylesTest and 2 more" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Webdriver_Learning.test" />
       <option name="TEST_OBJECT" value="PATTERN" />
@@ -239,6 +143,7 @@
         <pattern testClass="ru.stqa.training.selenium.tests.homework4.PricesStylesTest" />
         <pattern testClass="ru.stqa.training.selenium.tests.homework4.RightProductOpenedTest" />
         <pattern testClass="ru.stqa.training.selenium.tests.homework4.SortingTest" />
+        <pattern testClass="ru.stqa.training.selenium.tests.Sandbox" />
       </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -255,6 +160,24 @@
       <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.tests.homework5" />
       <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.tests.homework5.ProductCreationTest" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductCreationTest.testProductionCreation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Webdriver_Learning.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.training.selenium.tests.homework5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.tests.homework5" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.tests.homework5.ProductCreationTest" />
+      <option name="METHOD_NAME" value="testProductionCreation" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -298,11 +221,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ProductCreationTest.testProductionCreation" />
+        <item itemvalue="TestNG.ProductCreationTest" />
+        <item itemvalue="TestNG.Sandbox.test" />
         <item itemvalue="TestNG.Sandbox" />
         <item itemvalue="TestNG.PricesStylesTest and 2 more" />
-        <item itemvalue="TestNG.Sandbox.test" />
-        <item itemvalue="Application.Sandbox" />
-        <item itemvalue="TestNG.ProductCreationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -332,14 +255,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="102" y="114" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1593494125284">
+    <state x="127" y="110" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1594615929633">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="102" y="114" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1593494125284" />
-    <state x="544" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1593493639949">
+    <state x="127" y="110" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1594615929633" />
+    <state x="544" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1594613325882">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="544" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1593493639949" />
+    <state x="544" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1594613325882" />
     <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591937311183" />
     <state x="476" y="187" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1593445939526">
       <screen x="0" y="0" width="1366" height="728" />
@@ -354,61 +277,61 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="466" y="208" key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog/0.0.1366.728@0.0.1366.728" timestamp="1593414848482" />
-    <state x="220" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1593665666242">
+    <state x="217" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1593753880045">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="220" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1593665666242" />
+    <state x="217" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1593753880045" />
     <state x="504" y="190" key="FileChooserDialogImpl" timestamp="1592451102554">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="504" y="190" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592451102554" />
     <state x="-1060" y="302" key="FileChooserDialogImpl/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591681256081" />
-    <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1593583986869">
+    <state width="1323" height="161" key="GridCell.Tab.0.bottom" timestamp="1594615921669">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593583986869" />
+    <state width="1323" height="161" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594615921669" />
     <state width="1637" height="153" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
-    <state width="1323" height="223" key="GridCell.Tab.0.center" timestamp="1593583986868">
+    <state width="1323" height="161" key="GridCell.Tab.0.center" timestamp="1594615921669">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593583986868" />
+    <state width="1323" height="161" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594615921669" />
     <state width="1637" height="153" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
-    <state width="1323" height="223" key="GridCell.Tab.0.left" timestamp="1593583986868">
+    <state width="1323" height="161" key="GridCell.Tab.0.left" timestamp="1594615921669">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593583986868" />
+    <state width="1323" height="161" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594615921669" />
     <state width="1637" height="153" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
-    <state width="1323" height="223" key="GridCell.Tab.0.right" timestamp="1593583986868">
+    <state width="1323" height="161" key="GridCell.Tab.0.right" timestamp="1594615921669">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593583986868" />
+    <state width="1323" height="161" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594615921669" />
     <state width="1637" height="153" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1593583986869">
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1594015857310">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593583986869" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594015857310" />
     <state width="1637" height="336" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591944000700" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591625656013" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1593583986869">
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1594015857310">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1593583986869" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1594015857310" />
     <state width="1637" height="336" key="GridCell.Tab.1.center/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591944000700" />
     <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591625656013" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1593583986869">
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1594015857310">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1593583986869" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1594015857310" />
     <state width="1637" height="336" key="GridCell.Tab.1.left/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591944000700" />
     <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591625656013" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1593583986869">
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1594015857310">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1593583986869" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1594015857310" />
     <state width="1637" height="336" key="GridCell.Tab.1.right/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591944000700" />
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591625656013" />
     <state x="557" y="321" key="ReplaceDuplicatesPrompt" timestamp="1593057275059">
@@ -434,18 +357,19 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="384" y="193" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1593664061257" />
-    <state x="413" y="114" key="extract.method.dialog" timestamp="1593491775699">
+    <state x="413" y="114" key="extract.method.dialog" timestamp="1593754533254">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="114" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1593491775699" />
-    <state x="702" y="146" key="refactoring.ChangeSignatureDialog" timestamp="1591937312995">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="413" y="114" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1593754533254" />
+    <state x="499" y="102" key="refactoring.ChangeSignatureDialog" timestamp="1594612827710">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="499" y="102" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1594612827710" />
     <state x="702" y="146" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591937312995" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1593457233705">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1594009004808">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1593457233705" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1594009004808" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,6 +1,7 @@
 package ru.stqa.training.selenium.models;
 
-import ru.stqa.training.selenium.generators.GeneratorHelper;
+import ru.stqa.training.selenium.models.standardModels.Date;
+import ru.stqa.training.selenium.models.standardModels.Image;
 
 import java.io.File;
 import java.sql.SQLException;
@@ -9,8 +10,9 @@ import java.util.*;
 import static org.apache.commons.lang3.RandomStringUtils.random;
 import static org.apache.commons.lang3.RandomUtils.nextBoolean;
 import static org.apache.commons.lang3.RandomUtils.nextInt;
+import static ru.stqa.training.selenium.models.standardModels.Date.getRandomDate;
 
-public class Product extends GeneratorHelper {
+public class Product extends ModelsHelper {
 
     public enum Sticker {
         NEW,
@@ -28,9 +30,9 @@ public class Product extends GeneratorHelper {
     List<String> productGroups;
     String quantity;
     String soldOutStatus;
-    File image;
-    GregorianCalendar dateValidFrom;
-    GregorianCalendar dateValidTo;
+    Image image;
+    ru.stqa.training.selenium.models.standardModels.Date dateValidFrom;
+    ru.stqa.training.selenium.models.standardModels.Date dateValidTo;
     String manufacturer;
     String keyword;
     String shortDescription;
@@ -142,29 +144,29 @@ public class Product extends GeneratorHelper {
         return this;
     }
 
-    public File getImage() {
+    public Image getImage() {
         return image;
     }
 
     public Product withImage(File image) {
-        this.image = image;
+        this.image = new Image(image);
         return this;
     }
 
-    public GregorianCalendar getDateValidFrom() {
+    public ru.stqa.training.selenium.models.standardModels.Date getDateValidFrom() {
         return dateValidFrom;
     }
 
-    public Product withDateValidFrom(GregorianCalendar dateValidFrom) {
+    public Product withDateValidFrom(ru.stqa.training.selenium.models.standardModels.Date dateValidFrom) {
         this.dateValidFrom = dateValidFrom;
         return this;
     }
 
-    public GregorianCalendar getDateValidTo() {
+    public ru.stqa.training.selenium.models.standardModels.Date getDateValidTo() {
         return dateValidTo;
     }
 
-    public Product withDateValidTo(GregorianCalendar dateValidTo) {
+    public Product withDateValidTo(ru.stqa.training.selenium.models.standardModels.Date dateValidTo) {
         this.dateValidTo = dateValidTo;
         return this;
     }
@@ -259,7 +261,7 @@ public class Product extends GeneratorHelper {
         return this;
     }
 
-    public Product generateRandomProduct() throws SQLException {
+    public Product generateRandomProduct(File image) throws SQLException {
         Status status = Status.randomStatus();
         String name = random(nextInt(5, 10), true, true);
         String code = random(nextInt(3, 10), false, true);
@@ -271,13 +273,11 @@ public class Product extends GeneratorHelper {
         }
         List<String> productGroups = getRandomStringValuesFromDB(
                 "litecart", "root", "", "lc_product_groups_values_info", "name");
-        String quantity = generateTwoDecimalNumber(1, 100000);
+        String quantity = generateTwoDecimalNumber(1, 1000);
         String soldOutStatus = getRandomStringValueFromDB(
                 "litecart", "root", "", "lc_sold_out_statuses_info", "name");
-        File image = new File(System.getProperty("user.dir") +
-                "/src/test/resources/test_files/road-1072823__340.jpg");
-        GregorianCalendar dateValidFrom = getRandomDate(2000, 2015);
-        GregorianCalendar dateValidTo = getRandomDate(2016, 2030);
+        ru.stqa.training.selenium.models.standardModels.Date dateValidFrom = getRandomDate(2000, 2015);
+        Date dateValidTo = getRandomDate(2016, 2030);
         String manufacturer = getRandomStringValueFromDB(
                 "litecart", "root", "", "lc_manufacturers", "name");
         String keyword = random(nextInt(4, 10), true, true);
@@ -285,11 +285,11 @@ public class Product extends GeneratorHelper {
         String description = generateRandomTextWithSpaces(10, 30);
         String headTitle = generateRandomTextWithSpaces(3, 5);
         String metaDescription = generateRandomTextWithSpaces(5, 10);
-        String purchasePrice = generateTwoDecimalNumber(0.01, 1000000);
+        String purchasePrice = generateTwoDecimalNumber(0.01, 1000);
         String currency = getRandomStringValueFromDB(
                 "litecart", "root", "", "lc_currencies", "name");
-        String priceUSD = generateTwoDecimalNumber(0.1, 1000000);
-        String priceEUR = generateTwoDecimalNumber(0.1, 1000000);
+        String priceUSD = generateTwoDecimalNumber(0.1, 1000);
+        String priceEUR = generateTwoDecimalNumber(0.1, 1000);
 
         return new Product().withStatus(status)
                 .withName(name)
@@ -337,18 +337,11 @@ public class Product extends GeneratorHelper {
         if (quantity != null ? !quantity.equals(product.quantity) : product.quantity != null) return false;
         if (soldOutStatus != null ? !soldOutStatus.equals(product.soldOutStatus) : product.soldOutStatus != null)
             return false;
-        if (image != null ? !image.equals(product.image) : product.image != null) return false;
-        if (dateValidFrom != null ? !(dateValidFrom.get(Calendar.YEAR) == (product.dateValidFrom.get(Calendar.YEAR))) : product.dateValidFrom != null)
+        if (image != null ? !image.equals(product.image) : product.image != null)
             return false;
-        if (dateValidFrom != null ? !(dateValidFrom.get(Calendar.MONTH) == (product.dateValidFrom.get(Calendar.MONTH))) : product.dateValidFrom != null)
+        if (dateValidFrom != null ? !dateValidFrom.equals(product.dateValidFrom) : product.dateValidFrom != null)
             return false;
-        if (dateValidFrom != null ? !(dateValidFrom.get(Calendar.DAY_OF_MONTH) == (product.dateValidFrom.get(Calendar.DAY_OF_MONTH))) : product.dateValidFrom != null)
-            return false;
-        if (dateValidTo != null ? !(dateValidTo.get(Calendar.YEAR) == (product.dateValidTo.get(Calendar.YEAR))) : product.dateValidTo != null)
-            return false;
-        if (dateValidTo != null ? !(dateValidTo.get(Calendar.MONTH) == (product.dateValidTo.get(Calendar.MONTH))) : product.dateValidTo != null)
-            return false;
-        if (dateValidTo != null ? !(dateValidTo.get(Calendar.DAY_OF_MONTH) == (product.dateValidTo.get(Calendar.DAY_OF_MONTH))) : product.dateValidTo != null)
+        if (dateValidTo != null ? !dateValidTo.equals(product.dateValidTo) : product.dateValidTo != null)
             return false;
         if (manufacturer != null ? !manufacturer.equals(product.manufacturer) : product.manufacturer != null)
             return false;
