@@ -1,5 +1,6 @@
 package ru.stqa.training.selenium.appmanager.helpers.usersite;
 
+import org.apache.commons.lang3.RandomUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -138,5 +139,11 @@ public class HomepageHelper extends HelperBase {
         } catch (TimeoutException ex) {
             return false;
         }
+    }
+
+    public void openRandomProduct() {
+        waitHomepageIsOpened();
+        List<WebElement> products = wd.findElements(By.cssSelector(".product"));
+        products.get(RandomUtils.nextInt(0, products.size())).click();
     }
 }

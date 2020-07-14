@@ -13,6 +13,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import ru.stqa.training.selenium.appmanager.helpers.adminpanel.EditProductPageHelper;
 import ru.stqa.training.selenium.appmanager.helpers.adminpanel.*;
+import ru.stqa.training.selenium.appmanager.helpers.usersite.CheckoutPageHelper;
 import ru.stqa.training.selenium.appmanager.helpers.usersite.CreateAccountPageHelper;
 import ru.stqa.training.selenium.appmanager.helpers.usersite.HomepageHelper;
 import ru.stqa.training.selenium.appmanager.helpers.usersite.ProductPageHelper;
@@ -33,6 +34,7 @@ public class ApplicationManager {
     private final Properties properties;
     private WebDriver wd;
     private WebDriverWait wait;
+    public int implicitWaitTimeAmount = 10;
     private String browser;
     private NavigationHelper navigationHelper;
     private TemplatePageHelper templatePageHelper;
@@ -90,6 +92,7 @@ public class ApplicationManager {
     private CreateAccountPageHelper createAccountPageHelper;
     private NewProductPageHelper newProductPageHelper;
     private EditProductPageHelper editProductPageHelper;
+    private CheckoutPageHelper checkoutPageHelper;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -162,7 +165,7 @@ public class ApplicationManager {
             }
 
             wd.manage().window().maximize();
-            wd.manage().timeouts().implicitlyWait(1, SECONDS);
+            wd.manage().timeouts().implicitlyWait(implicitWaitTimeAmount, SECONDS);
             wait = new WebDriverWait(wd, 10);
             wd.get(properties.getProperty("web.baseUrl"));
         }
@@ -586,5 +589,12 @@ public class ApplicationManager {
 
     public Properties getProperties() {
         return properties;
+    }
+
+    public CheckoutPageHelper checkoutPage() {
+        if (checkoutPageHelper == null) {
+            checkoutPageHelper = new CheckoutPageHelper(this);
+        }
+        return checkoutPageHelper;
     }
 }

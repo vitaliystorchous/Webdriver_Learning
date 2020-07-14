@@ -321,4 +321,8 @@ public class NavigationHelper extends HelperBase {
     public void addNewProductPage() {
         wait.until(elementToBeClickable(By.cssSelector("[href*=product].button"))).click();
     }
+
+    public void checkoutPage() {
+        wait.until(elementToBeClickable(By.xpath("//a[.=\"Checkout »\"]"))).click();
+    }
 }

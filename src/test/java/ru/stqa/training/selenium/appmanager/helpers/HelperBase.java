@@ -5,7 +5,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import ru.stqa.training.selenium.appmanager.ApplicationManager;
 
 import java.io.File;
-import java.net.MalformedURLException;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
@@ -16,12 +15,13 @@ public class HelperBase {
     ApplicationManager app;
     protected WebDriver wd;
     protected WebDriverWait wait;
-    protected long standardWaitDurationSec = 10;
+    protected long implicitWaitTimeAmount;
 
     public HelperBase(ApplicationManager app) {
         this.app = app;
         this.wd = app.getDriver();
         this.wait = app.getWait();
+        this.implicitWaitTimeAmount = app.implicitWaitTimeAmount;
     }
 
     protected void click(By locator) {
@@ -61,9 +61,10 @@ public class HelperBase {
         try {
             wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
             wd.findElement(locator);
-            wd.manage().timeouts().implicitlyWait(standardWaitDurationSec, TimeUnit.SECONDS);
+            wd.manage().timeouts().implicitlyWait(implicitWaitTimeAmount, TimeUnit.SECONDS);
             return true;
         } catch (NoSuchElementException ex) {
+            wd.manage().timeouts().implicitlyWait(implicitWaitTimeAmount, TimeUnit.SECONDS);
             return false;
         }
     }
@@ -76,7 +77,7 @@ public class HelperBase {
         try {
             wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
             wd.findElement(By.xpath("//*[.='" + byText + "']"));
-            wd.manage().timeouts().implicitlyWait(standardWaitDurationSec, TimeUnit.SECONDS);
+            wd.manage().timeouts().implicitlyWait(implicitWaitTimeAmount, TimeUnit.SECONDS);
             return true;
         } catch (NoSuchElementException ex) {
             return false;
@@ -146,10 +147,12 @@ public class HelperBase {
 
     protected boolean isElementVisible(By selector) {
         try {
+            wait.withTimeout(Duration.ofSeconds(0));
             wait.until(visibilityOfElementLocated(selector));
+            wait.withTimeout(Duration.ofSeconds(implicitWaitTimeAmount));
             return true;
         } catch (TimeoutException ex) {
-            ex.printStackTrace();
+            wait.withTimeout(Duration.ofSeconds(implicitWaitTimeAmount));
             return false;
         }
     }
@@ -158,10 +161,10 @@ public class HelperBase {
         try {
             wait.withTimeout(Duration.ofMillis(timeout_millis));
             wait.until(visibilityOfElementLocated(selector));
-            wait.withTimeout(Duration.ofSeconds(standardWaitDurationSec));
+            wait.withTimeout(Duration.ofSeconds(implicitWaitTimeAmount));
             return true;
         } catch (TimeoutException ex) {
-            wait.withTimeout(Duration.ofSeconds(standardWaitDurationSec));
+            wait.withTimeout(Duration.ofSeconds(implicitWaitTimeAmount));
             return false;
         }
     }
