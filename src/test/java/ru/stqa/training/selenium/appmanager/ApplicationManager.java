@@ -93,6 +93,7 @@ public class ApplicationManager {
     private NewProductPageHelper newProductPageHelper;
     private EditProductPageHelper editProductPageHelper;
     private CheckoutPageHelper checkoutPageHelper;
+    private String firstWindowHandle;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -168,6 +169,7 @@ public class ApplicationManager {
             wd.manage().timeouts().implicitlyWait(implicitWaitTimeAmount, SECONDS);
             wait = new WebDriverWait(wd, 10);
             wd.get(properties.getProperty("web.baseUrl"));
+            firstWindowHandle = wd.getWindowHandle();
         }
         return wd;
     }
@@ -596,5 +598,13 @@ public class ApplicationManager {
             checkoutPageHelper = new CheckoutPageHelper(this);
         }
         return checkoutPageHelper;
+    }
+
+    public int getNumberOfWindows() {
+        return wd.getWindowHandles().size();
+    }
+
+    public String getFirstWindowHandle() {
+        return firstWindowHandle;
     }
 }

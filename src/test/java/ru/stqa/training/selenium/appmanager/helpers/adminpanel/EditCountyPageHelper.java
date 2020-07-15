@@ -11,7 +11,9 @@ import ru.stqa.training.selenium.models.Zone;
 import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
+import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfAllElementsLocatedBy;
 
 public class EditCountyPageHelper extends HelperBase {
@@ -33,5 +35,61 @@ public class EditCountyPageHelper extends HelperBase {
         }
 
         return zonesJava;
+    }
+
+    public void openISOAlpha2Page() {
+        Set<String> oldWindows = wd.getWindowHandles();
+        wait.until(elementToBeClickable(By.xpath("//td[@id=\"content\"]//tr[contains(., \"(ISO 3166-1 alpha-2)\")]//a")))
+                .click();
+        String newWindow = wait.until(anyWindowOtherThan(oldWindows));
+        wd.switchTo().window(newWindow);
+    }
+
+    public void openISOAlpha3Page() {
+        Set<String> oldWindows = wd.getWindowHandles();
+        wait.until(elementToBeClickable(By.xpath("//td[@id=\"content\"]//tr[contains(., \"(ISO 3166-1 alpha-3)\")]//a")))
+                .click();
+        String newWindow = wait.until(anyWindowOtherThan(oldWindows));
+        wd.switchTo().window(newWindow);
+    }
+
+    public void openRegularExpressionPageNearTaxIDFormatFiled() {
+        Set<String> oldWindows = wd.getWindowHandles();
+        wait.until(elementToBeClickable(By.xpath("//td[@id=\"content\"]//tr[contains(., \"Tax ID Format\")]//a")))
+                .click();
+        String newWindow = wait.until(anyWindowOtherThan(oldWindows));
+        wd.switchTo().window(newWindow);
+    }
+
+    public void openAddressFormatsPage() {
+        Set<String> oldWindows = wd.getWindowHandles();
+        wait.until(elementToBeClickable(By.xpath("//td[@id=\"content\"]//tr[contains(., \"Address Format\")]//a[@target]")))
+                .click();
+        String newWindow = wait.until(anyWindowOtherThan(oldWindows));
+        wd.switchTo().window(newWindow);
+    }
+
+    public void openRegularExpressionPageNearPostcodeFormatField() {
+        Set<String> oldWindows = wd.getWindowHandles();
+        wait.until(elementToBeClickable(By.xpath("//td[@id=\"content\"]//tr[contains(., \"Postcode Format\")]//a[@target]")))
+                .click();
+        String newWindow = wait.until(anyWindowOtherThan(oldWindows));
+        wd.switchTo().window(newWindow);
+    }
+
+    public void openListOfCountriesPage() {
+        Set<String> oldWindows = wd.getWindowHandles();
+        wait.until(elementToBeClickable(By.xpath("//td[@id=\"content\"]//tr[contains(., \"Currency Code\")]//a[@target]")))
+                .click();
+        String newWindow = wait.until(anyWindowOtherThan(oldWindows));
+        wd.switchTo().window(newWindow);
+    }
+
+    public void openListOfCountryCallingCodesPage() {
+        Set<String> oldWindows = wd.getWindowHandles();
+        wait.until(elementToBeClickable(By.xpath("//td[@id=\"content\"]//tr[contains(., \"Phone Country Code\")]//a[@target]")))
+                .click();
+        String newWindow = wait.until(anyWindowOtherThan(oldWindows));
+        wd.switchTo().window(newWindow);
     }
 }

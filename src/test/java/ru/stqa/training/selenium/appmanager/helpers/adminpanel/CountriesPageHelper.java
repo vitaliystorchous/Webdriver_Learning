@@ -1,8 +1,10 @@
 package ru.stqa.training.selenium.appmanager.helpers.adminpanel;
 
+import org.apache.commons.lang3.RandomUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import ru.stqa.training.selenium.appmanager.ApplicationManager;
 import ru.stqa.training.selenium.appmanager.helpers.HelperBase;
 import ru.stqa.training.selenium.models.Country;
@@ -12,6 +14,7 @@ import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfAllElementsLocatedBy;
 
 public class CountriesPageHelper extends HelperBase {
@@ -45,5 +48,11 @@ public class CountriesPageHelper extends HelperBase {
 
     public void openCountry(String name) {
         wd.findElement(By.linkText(name)).click();
+    }
+
+    public void openRandomCountry() {
+        wait.until(presenceOfElementLocated(By.cssSelector("form[name=\"countries_form\"]")));
+        List<WebElement> countries = wd.findElements(By.cssSelector(".row td:nth-child(5) a"));
+        countries.get(RandomUtils.nextInt(0, countries.size())).click();
     }
 }

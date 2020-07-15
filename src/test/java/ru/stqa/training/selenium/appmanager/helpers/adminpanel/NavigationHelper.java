@@ -1,14 +1,10 @@
 package ru.stqa.training.selenium.appmanager.helpers.adminpanel;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import ru.stqa.training.selenium.appmanager.ApplicationManager;
 import ru.stqa.training.selenium.appmanager.helpers.HelperBase;
 
-import java.net.MalformedURLException;
 import java.util.Properties;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
@@ -16,10 +12,12 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClick
 public class NavigationHelper extends HelperBase {
 
     private final Properties properties;
+    private final String firstWindowHandle;
 
     public NavigationHelper(ApplicationManager app) {
         super(app);
         properties = app.getProperties();
+        firstWindowHandle = app.getFirstWindowHandle();
     }
 
 
@@ -324,5 +322,10 @@ public class NavigationHelper extends HelperBase {
 
     public void checkoutPage() {
         wait.until(elementToBeClickable(By.xpath("//a[.=\"Checkout »\"]"))).click();
+    }
+
+    public void closeCurrentWindowAndGoBackToMainOne() {
+        wd.close();
+        wd.switchTo().window(firstWindowHandle);
     }
 }

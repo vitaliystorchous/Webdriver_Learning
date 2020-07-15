@@ -1,11 +1,14 @@
 package ru.stqa.training.selenium.appmanager.helpers;
 
+import org.checkerframework.checker.nullness.compatqual.NullableDecl;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import ru.stqa.training.selenium.appmanager.ApplicationManager;
 
 import java.io.File;
 import java.time.Duration;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
@@ -171,5 +174,17 @@ public class HelperBase {
 
     public String getPageTitle() {
         return wd.findElement(By.cssSelector("h1")).getAttribute("innerText");
+    }
+
+    public ExpectedCondition<String> anyWindowOtherThan(Set<String> oldWindows) {
+        return new ExpectedCondition<String>() {
+            @NullableDecl
+            @Override
+            public String apply(@NullableDecl WebDriver driver) {
+                Set<String> handles = driver.getWindowHandles();
+                handles.removeAll(oldWindows);
+                return handles.size() > 0 ? handles.iterator().next() : null;
+            }
+        };
     }
 }
