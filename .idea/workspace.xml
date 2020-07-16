@@ -20,13 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cc52cb3-a665-4c10-8e77-8c7ed6d68616" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/homework7/PageOpenedInNewWindowTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/homework8/ExampleTestForTestingBrowserStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/HelperBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CountriesPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CountriesPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/EditCountyPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/EditCountyPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/NavigationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/NavigationHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/remote.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/remote.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +91,7 @@
       <recent name="D:\github repositories\Webdriver_Learning\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PageOpenedInNewWindowTest">
+  <component name="RunManager" selected="TestNG.ExampleTestForTestingBrowserStack">
     <configuration name="CartTest.testCart" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Webdriver_Learning.test" />
       <extension name="coverage">
@@ -107,6 +104,33 @@
       <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.tests.homework6.CartTest" />
       <option name="METHOD_NAME" value="testCart" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExampleTestForTestingBrowserStack" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Webdriver_Learning.test" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.training.selenium.tests.homework8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.tests.homework8" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.tests.homework8.ExampleTestForTestingBrowserStack" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea -Dtarget=&quot;remote&quot;" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -165,31 +189,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sandbox.test" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Webdriver_Learning.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.training.selenium.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.tests.Sandbox" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="TestNG.CartTest.testCart" />
+      <item itemvalue="TestNG.ExampleTestForTestingBrowserStack" />
+      <item itemvalue="TestNG.PageOpenedInNewWindowTest" />
+      <item itemvalue="TestNG.ProductCreationTest" />
+      <item itemvalue="TestNG.ProductCreationTest.testProductionCreation" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ExampleTestForTestingBrowserStack" />
         <item itemvalue="TestNG.PageOpenedInNewWindowTest" />
         <item itemvalue="TestNG.CartTest.testCart" />
         <item itemvalue="TestNG.ProductCreationTest.testProductionCreation" />
         <item itemvalue="TestNG.ProductCreationTest" />
-        <item itemvalue="TestNG.Sandbox.test" />
       </list>
     </recent_temporary>
   </component>
@@ -219,6 +232,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="274" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594873615344">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="274" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1594873615344" />
     <state x="127" y="110" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1594702540935">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -250,52 +267,52 @@
     </state>
     <state x="504" y="190" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592451102554" />
     <state x="-1060" y="302" key="FileChooserDialogImpl/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591681256081" />
-    <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1594788128738">
+    <state width="1323" height="161" key="GridCell.Tab.0.bottom" timestamp="1594874272790">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594788128738" />
+    <state width="1323" height="161" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594874272790" />
     <state width="1637" height="153" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
-    <state width="1323" height="223" key="GridCell.Tab.0.center" timestamp="1594788128738">
+    <state width="1323" height="161" key="GridCell.Tab.0.center" timestamp="1594874272790">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594788128738" />
+    <state width="1323" height="161" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594874272790" />
     <state width="1637" height="153" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
-    <state width="1323" height="223" key="GridCell.Tab.0.left" timestamp="1594788128738">
+    <state width="1323" height="161" key="GridCell.Tab.0.left" timestamp="1594874272789">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594788128738" />
+    <state width="1323" height="161" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594874272789" />
     <state width="1637" height="153" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
-    <state width="1323" height="223" key="GridCell.Tab.0.right" timestamp="1594788128738">
+    <state width="1323" height="161" key="GridCell.Tab.0.right" timestamp="1594874272790">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594788128738" />
+    <state width="1323" height="161" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594874272790" />
     <state width="1637" height="153" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1594788128499">
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1594792986083">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594788128499" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594792986083" />
     <state width="1637" height="336" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591944000700" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591625656013" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1594788128499">
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1594792986083">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1594788128499" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1594792986083" />
     <state width="1637" height="336" key="GridCell.Tab.1.center/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591944000700" />
     <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591625656013" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1594788128498">
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1594792986083">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1594788128498" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1594792986083" />
     <state width="1637" height="336" key="GridCell.Tab.1.left/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591944000700" />
     <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591625656013" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1594788128499">
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1594792986083">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1594788128499" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1594792986083" />
     <state width="1637" height="336" key="GridCell.Tab.1.right/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591944000700" />
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591625656013" />
     <state x="557" y="321" key="ReplaceDuplicatesPrompt" timestamp="1593057275059">
@@ -330,10 +347,10 @@
     </state>
     <state x="499" y="102" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1594612827710" />
     <state x="702" y="146" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591937312995" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1594009004808">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1594871879644">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1594009004808" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1594871879644" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

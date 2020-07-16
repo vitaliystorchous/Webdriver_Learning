@@ -155,11 +155,16 @@ public class ApplicationManager {
                         break;
                 }
             } else {
-                DesiredCapabilities capabilities = new DesiredCapabilities();
-                capabilities.setBrowserName(browser);
-                capabilities.setPlatform(Platform.fromString(System.getProperty("platform", "ANY")));
+                DesiredCapabilities caps = new DesiredCapabilities();
+                caps.setCapability("os", "OS X");
+                caps.setCapability("os_version", "Mojave");
+                caps.setCapability("browser", "Safari");
+                caps.setCapability("browser_version", "12.0");
+                caps.setCapability("browserstack.local", "false");
+                caps.setCapability("browserstack.selenium_version", "3.141.59");
+                caps.setCapability("name", "qwerasdf17's First Test");
                 try {
-                    wd = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
+                    wd = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), caps);
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }
