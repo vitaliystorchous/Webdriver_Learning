@@ -13,6 +13,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import ru.stqa.training.selenium.appmanager.helpers.adminpanel.EditProductPageHelper;
 import ru.stqa.training.selenium.appmanager.helpers.adminpanel.*;
+import ru.stqa.training.selenium.appmanager.helpers.logging.LoggingHelper;
 import ru.stqa.training.selenium.appmanager.helpers.usersite.CheckoutPageHelper;
 import ru.stqa.training.selenium.appmanager.helpers.usersite.CreateAccountPageHelper;
 import ru.stqa.training.selenium.appmanager.helpers.usersite.HomepageHelper;
@@ -94,6 +95,7 @@ public class ApplicationManager {
     private EditProductPageHelper editProductPageHelper;
     private CheckoutPageHelper checkoutPageHelper;
     private String firstWindowHandle;
+    private LoggingHelper loggingHelper;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -175,6 +177,7 @@ public class ApplicationManager {
             wait = new WebDriverWait(wd, 10);
             wd.get(properties.getProperty("web.baseUrl"));
             firstWindowHandle = wd.getWindowHandle();
+            loggingHelper = new LoggingHelper(wd);
         }
         return wd;
     }
@@ -611,5 +614,9 @@ public class ApplicationManager {
 
     public String getFirstWindowHandle() {
         return firstWindowHandle;
+    }
+
+    public LoggingHelper logs() {
+        return loggingHelper;
     }
 }

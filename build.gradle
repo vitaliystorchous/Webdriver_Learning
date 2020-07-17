@@ -20,6 +20,7 @@ dependencies {
     implementation 'mysql:mysql-connector-java:8.0.20'
     implementation 'com.github.mifmif:generex:1.0.2'
     compile group: 'commons-io', name: 'commons-io', version: '2.7'
+    implementation 'com.automation-remarks:video-recorder-testng:2.0'
 }
 
 tasks.withType(JavaCompile) {
