@@ -20,8 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cc52cb3-a665-4c10-8e77-8c7ed6d68616" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/logging/LoggingHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/homework9/CheckBrowserLogsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/homework9/ConnectSeleniumToProxyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -32,13 +31,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/ApplicationManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CatalogPageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CatalogPageHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/models/Date.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/models/Image.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/tests/Sandbox.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/stqa/training/selenium/tests/Sandbox.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CatalogPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/appmanager/helpers/adminpanel/CatalogPageHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/Sandbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/tests/Sandbox.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +100,7 @@
       <recent name="D:\github repositories\Webdriver_Learning\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CheckBrowserLogsTest">
+  <component name="RunManager" selected="TestNG.ConnectSeleniumToProxyTest">
     <configuration name="CheckBrowserLogsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Webdriver_Learning.test" />
       <extension name="coverage">
@@ -143,17 +136,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sandbox" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ConnectSeleniumToProxyTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Webdriver_Learning.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.training.selenium.tests.*" />
+          <option name="PATTERN" value="ru.stqa.training.selenium.tests.homework9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.tests.Sandbox" />
+      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.tests.homework9" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.tests.homework9.ConnectSeleniumToProxyTest" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConnectSeleniumToProxyTest.test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Webdriver_Learning.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.training.selenium.tests.homework9.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.tests.homework9" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.tests.homework9.ConnectSeleniumToProxyTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -178,38 +189,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sandbox.testMethodOne" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Webdriver_Learning.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.training.selenium.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.tests.Sandbox" />
-      <option name="METHOD_NAME" value="testMethodOne" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="TestNG.Sandbox" />
       <item itemvalue="TestNG.CheckBrowserLogsTest" />
       <item itemvalue="TestNG.CheckBrowserLogsTest.testBrowserLogs" />
       <item itemvalue="TestNG.Sandbox.test" />
-      <item itemvalue="TestNG.Sandbox.testMethodOne" />
+      <item itemvalue="TestNG.ConnectSeleniumToProxyTest.test" />
+      <item itemvalue="TestNG.ConnectSeleniumToProxyTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ConnectSeleniumToProxyTest" />
+        <item itemvalue="TestNG.ConnectSeleniumToProxyTest.test" />
+        <item itemvalue="TestNG.Sandbox.test" />
         <item itemvalue="TestNG.CheckBrowserLogsTest" />
         <item itemvalue="TestNG.CheckBrowserLogsTest.testBrowserLogs" />
-        <item itemvalue="TestNG.Sandbox" />
-        <item itemvalue="TestNG.Sandbox.testMethodOne" />
-        <item itemvalue="TestNG.Sandbox.test" />
       </list>
     </recent_temporary>
   </component>
@@ -278,28 +271,28 @@
     </state>
     <state x="504" y="190" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592451102554" />
     <state x="-1060" y="302" key="FileChooserDialogImpl/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1591681256081" />
-    <state width="1323" height="161" key="GridCell.Tab.0.bottom" timestamp="1595018308965">
+    <state width="1323" height="161" key="GridCell.Tab.0.bottom" timestamp="1595221346019">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="161" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595018308965" />
+    <state width="1323" height="161" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595221346019" />
     <state width="1637" height="153" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
-    <state width="1323" height="161" key="GridCell.Tab.0.center" timestamp="1595018308965">
+    <state width="1323" height="161" key="GridCell.Tab.0.center" timestamp="1595221346019">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="161" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595018308965" />
+    <state width="1323" height="161" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595221346019" />
     <state width="1637" height="153" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
-    <state width="1323" height="161" key="GridCell.Tab.0.left" timestamp="1595018308964">
+    <state width="1323" height="161" key="GridCell.Tab.0.left" timestamp="1595221346019">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="161" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595018308964" />
+    <state width="1323" height="161" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595221346019" />
     <state width="1637" height="153" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
-    <state width="1323" height="161" key="GridCell.Tab.0.right" timestamp="1595018308965">
+    <state width="1323" height="161" key="GridCell.Tab.0.right" timestamp="1595221346019">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="161" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595018308965" />
+    <state width="1323" height="161" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595221346019" />
     <state width="1637" height="153" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1592203805398" />
     <state width="1877" height="312" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591940318719" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1594792986083">
@@ -358,10 +351,10 @@
     </state>
     <state x="499" y="102" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1595018067152" />
     <state x="702" y="146" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/-1680.38.1680.1010@0.0.1920.1040" timestamp="1591937312995" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1594962159134">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1595219464919">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1594962159134" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1595219464919" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
