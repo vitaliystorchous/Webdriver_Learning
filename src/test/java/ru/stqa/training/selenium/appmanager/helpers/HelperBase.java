@@ -8,6 +8,7 @@ import ru.stqa.training.selenium.appmanager.ApplicationManager;
 
 import java.io.File;
 import java.time.Duration;
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -74,6 +75,10 @@ public class HelperBase {
 
     public boolean areElementsPresent(By locator) {
         return wd.findElements(locator).size() > 0;
+    }
+
+    public boolean areElementsPresent(List<WebElement> elements) {
+        return elements.size() > 0;
     }
 
     public boolean isElementPresent(String byText) {
@@ -186,5 +191,17 @@ public class HelperBase {
                 return handles.size() > 0 ? handles.iterator().next() : null;
             }
         };
+    }
+
+    public boolean isElementPresent(WebElement element) {
+        try {
+            app.getDriver().manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+            element.getTagName();
+            app.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            return true;
+        } catch (NoSuchElementException ignored) {
+            app.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            return false;
+        }
     }
 }

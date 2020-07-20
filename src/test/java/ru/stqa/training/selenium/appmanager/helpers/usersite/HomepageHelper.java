@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import ru.stqa.training.selenium.appmanager.ApplicationManager;
 import ru.stqa.training.selenium.appmanager.helpers.HelperBase;
@@ -22,8 +24,16 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElemen
 
 public class HomepageHelper extends HelperBase {
 
+    @FindBy(css = ".product")
+    List<WebElement> products;
+
+    public void clickRandomProduct() {
+        products.get(RandomUtils.nextInt(0, products.size())).click();
+    }
+
     public HomepageHelper(ApplicationManager app) {
         super(app);
+        PageFactory.initElements(wd, this);
     }
 
     public List<Product> allProducts() {
@@ -143,7 +153,6 @@ public class HomepageHelper extends HelperBase {
 
     public void openRandomProduct() {
         waitHomepageIsOpened();
-        List<WebElement> products = wd.findElements(By.cssSelector(".product"));
-        products.get(RandomUtils.nextInt(0, products.size())).click();
+        clickRandomProduct();
     }
 }

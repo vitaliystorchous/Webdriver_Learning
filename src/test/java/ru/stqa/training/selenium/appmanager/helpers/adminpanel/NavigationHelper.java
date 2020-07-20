@@ -2,6 +2,8 @@ package ru.stqa.training.selenium.appmanager.helpers.adminpanel;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import ru.stqa.training.selenium.appmanager.ApplicationManager;
 import ru.stqa.training.selenium.appmanager.helpers.HelperBase;
 
@@ -14,8 +16,89 @@ public class NavigationHelper extends HelperBase {
     private final Properties properties;
     private final String firstWindowHandle;
 
+    @FindBy(name = "username")
+    public WebElement usernameField;
+
+    public NavigationHelper enterUsername(String username) {
+        usernameField.clear();
+        usernameField.sendKeys(username);
+        return this;
+    }
+
+    @FindBy(name = "password")
+    public WebElement passwordField;
+
+    public NavigationHelper enterPassword(String password) {
+        passwordField.clear();
+        passwordField.sendKeys(password);
+        return this;
+    }
+
+    @FindBy(name = "login")
+    public WebElement loginButton;
+
+    public void clickLoginButton() {
+        loginButton.click();
+    }
+
+    @FindBy(css = "#box-apps-menu #app- > [href*=appearance]")
+    public WebElement appearanceTab;
+
+    public NavigationHelper clickAppearanceTab() {
+        appearanceTab.click();
+        return this;
+    }
+
+    @FindBy(css = "#box-apps-menu #doc-template")
+    public WebElement templateButton;
+
+    public NavigationHelper clickTemplateButton() {
+        templateButton.click();
+        return this;
+    }
+
+    @FindBy(css = "#box-apps-menu #doc-logotype")
+    public WebElement logotypeButton;
+
+    public NavigationHelper clickLogotypeButton() {
+        logotypeButton.click();
+        return this;
+    }
+
+    @FindBy(css = "#box-apps-menu #app- > [href*=catalog]")
+    public WebElement catalogTab;
+
+    public NavigationHelper clickCatalogTab() {
+        catalogTab.click();
+        return this;
+    }
+
+    @FindBy(css = "#box-apps-menu #doc-catalog")
+    public WebElement catalogButton;
+
+    public NavigationHelper clickCatalogButton() {
+        catalogButton.click();
+        return this;
+    }
+
+    @FindBy(css = "#logotype-wrapper")
+    public WebElement logotype;
+
+    public NavigationHelper clickLogotype() {
+        logotype.click();
+        return this;
+    }
+
+    @FindBy(xpath = "//a[.=\"Checkout »\"]")
+    public WebElement checkoutLink;
+
+    public void clickCheckoutLink() {
+        checkoutLink.click();
+    }
+
     public NavigationHelper(ApplicationManager app) {
         super(app);
+        PageFactory.initElements(wd, this);
         properties = app.getProperties();
         firstWindowHandle = app.getFirstWindowHandle();
     }
@@ -24,9 +107,9 @@ public class NavigationHelper extends HelperBase {
     public void adminPanel() {
         wd.navigate().to("http://localhost/litecart/admin/");
         if (areElementsPresent(By.cssSelector("[name=login_form]"))) {
-            type(By.cssSelector("[name=username]"), properties.getProperty("web.adminUsername"));
-            type(By.cssSelector("[name=password]"), properties.getProperty("web.adminPassword"));
-            click(By.cssSelector("[name=login]"));
+            enterUsername(properties.getProperty("web.adminUsername"))
+                    .enterPassword(properties.getProperty("web.adminPassword"))
+                    .clickLoginButton();
         }
     }
 
@@ -34,36 +117,33 @@ public class NavigationHelper extends HelperBase {
         return wd.findElement(By.cssSelector("#box-apps-menu"));
     }
 
-    public void appearenceTab() {
-        navigationMenu().findElement(By.cssSelector("#app- > [href*=appearance]")).click();
+    public void templatePageByClickingAppearanceTab() {
+        clickAppearanceTab();
     }
 
     public void templatePage() {
-        appearenceTab();
-        navigationMenu().findElement(By.cssSelector("#doc-template")).click();
+        clickAppearanceTab().clickTemplateButton();
     }
 
     public void logotypePage() {
-        appearenceTab();
-        navigationMenu().findElement(By.cssSelector("#doc-logotype")).click();
+        clickAppearanceTab().clickLogotypeButton();
     }
 
-    public void catalogTab() {
-        navigationMenu().findElement(By.cssSelector("#app- > [href*=catalog]")).click();
+    public void catalogPageByClickingCatalogTab() {
+        clickCatalogTab();
     }
 
     public void catalogPage() {
-        catalogTab();
-        navigationMenu().findElement(By.cssSelector("#doc-catalog")).click();
+        clickCatalogTab().clickCatalogButton();
     }
 
     public void productGroupsPage() {
-        catalogTab();
+        catalogPageByClickingCatalogTab();
         navigationMenu().findElement(By.cssSelector("#doc-product_groups")).click();
     }
 
     public void optionGroupsPage() {
-        catalogTab();
+        catalogPageByClickingCatalogTab();
         navigationMenu().findElement(By.cssSelector("#doc-option_groups")).click();
     }
 
@@ -313,7 +393,7 @@ public class NavigationHelper extends HelperBase {
     }
 
     public void homepage() {
-        wd.findElement(By.cssSelector("#logotype-wrapper")).click();
+        clickLogotype();
     }
 
     public void addNewProductPage() {
@@ -321,7 +401,7 @@ public class NavigationHelper extends HelperBase {
     }
 
     public void checkoutPage() {
-        wait.until(elementToBeClickable(By.xpath("//a[.=\"Checkout »\"]"))).click();
+        clickCheckoutLink();
     }
 
     public void closeCurrentWindowAndGoBackToMainOne() {

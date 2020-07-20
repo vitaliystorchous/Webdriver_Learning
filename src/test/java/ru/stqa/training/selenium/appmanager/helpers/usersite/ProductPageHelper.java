@@ -4,6 +4,8 @@ import org.apache.commons.lang3.RandomUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import ru.stqa.training.selenium.appmanager.ApplicationManager;
@@ -13,12 +15,38 @@ import ru.stqa.training.selenium.models.Product;
 import java.net.MalformedURLException;
 
 import static java.lang.Double.parseDouble;
-import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
+import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class ProductPageHelper extends HelperBase {
 
+    @FindBy(css = "h1.title")
+    public WebElement productTitle;
+
+    @FindBy(css = "span.quantity")
+    public WebElement counterOfItemsInCart;
+
+    @FindBy(css = "select[name=\"options[Size]\"]")
+    public WebElement sizeDropdown;
+
+    public ProductPageHelper selectRandomSize() {
+        Select sizeSelect = new Select(sizeDropdown);
+        int amountOfOptions = sizeSelect.getOptions().size();
+        sizeSelect.selectByIndex(RandomUtils.nextInt(1, amountOfOptions));
+        return this;
+    }
+
+    @FindBy(css = "button[name=\"add_cart_product\"]")
+    public WebElement addToCartButton;
+
+    public ProductPageHelper clickAddToCartButton() {
+        addToCartButton.click();
+        return this;
+    }
+
+
     public ProductPageHelper(ApplicationManager app) {
         super(app);
+        PageFactory.initElements(wd, this);
     }
 
     public Product getProduct() {
@@ -54,18 +82,15 @@ public class ProductPageHelper extends HelperBase {
     }
 
     public void addToCart() {
-        wait.until(presenceOfElementLocated(By.cssSelector("h1.title")));
+        wait.until(visibilityOf(productTitle));
         int amountOfItemsInCart = Integer.parseInt(
-                wd.findElement(By.cssSelector("span.quantity")).getText());
+                counterOfItemsInCart.getText());
 
-        if (isElementPresent(By.cssSelector("select[name=\"options[Size]\"]"))) {
-            Select optionsSizeDropdown = new Select(wd.findElement(By.cssSelector("select[name=\"options[Size]\"]")));
-            int numberOfOptions = optionsSizeDropdown.getOptions().size();
-            optionsSizeDropdown.selectByIndex(RandomUtils.nextInt(1, numberOfOptions));
+        if (isElementPresent(sizeDropdown)) {
+            selectRandomSize();
         }
 
-        wd.findElement(By.cssSelector("button[name=\"add_cart_product\"]")).click();
-        wait.until((WebDriver d) -> d.findElement(By.cssSelector("span.quantity"))
-                .getText().equals(Integer.toString(amountOfItemsInCart + 1)));
+        clickAddToCartButton();
+        wait.until(textToBePresentInElement(counterOfItemsInCart, Integer.toString(amountOfItemsInCart + 1)));
     }
 }

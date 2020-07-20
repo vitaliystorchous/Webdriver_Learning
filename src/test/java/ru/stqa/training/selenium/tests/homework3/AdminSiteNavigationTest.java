@@ -16,7 +16,7 @@ public class AdminSiteNavigationTest extends TestBase {
 
     @Test
     public void testAppearenceTab(){
-        app.goTo().appearenceTab();
+        app.goTo().templatePageByClickingAppearanceTab();
         assertThat(app.templatePage().getPageTitle(), equalTo(" Template"));
     }
 
@@ -34,7 +34,7 @@ public class AdminSiteNavigationTest extends TestBase {
 
     @Test
     public void testCatalogTab() {
-        app.goTo().catalogTab();
+        app.goTo().catalogPageByClickingCatalogTab();
         assertThat(app.catalogPage().getPageTitle(), equalTo(" Catalog"));
     }
 
